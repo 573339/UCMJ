@@ -1,0 +1,1305 @@
+/*
+TRAINEE Bootstrap Sass Theme
+Author: Terrell Summers
+Version 0.0.1
+*/
+/* BASE- Base styles, variables, mixins, etc*/
+/* BASE */
+/* line 3, ../scss/base/_base.scss */
+body {
+  background-color: #00060b;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+/* line 9, ../scss/base/_base.scss */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+  min-width: 320px;
+  position: relative;
+}
+
+/* MODULES- Individual Site Components*/
+/* line 1, ../scss/modules/_buttons.scss */
+.btn {
+  padding: 6px 24px;
+}
+
+/* line 5, ../scss/modules/_buttons.scss */
+.btn-default {
+  color: white;
+  background-color: #007aff;
+  border: none;
+  border-radius: 0px;
+}
+
+/*Splash*/
+/* line 3, ../scss/modules/_sections.scss */
+.splash {
+  background: url(../img/splash.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 11, ../scss/modules/_sections.scss */
+.splash h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+  line-height: 120%;
+  padding: 20px;
+  margin: 0;
+}
+/* line 20, ../scss/modules/_sections.scss */
+.splash h3 {
+  font-size: 24px;
+  color: white;
+  font-weight: lighter;
+  padding: 15px;
+}
+
+/* line 28, ../scss/modules/_sections.scss */
+#splash-title {
+  margin: 150px auto;
+  text-align: center;
+  width: 500px;
+  position: relative;
+  top: 50%;
+}
+
+/* line 36, ../scss/modules/_sections.scss */
+hr {
+  border: solid white;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+  width: 15%;
+  margin: 0 auto;
+}
+
+/*UCMJ Drawer*/
+/* line 47, ../scss/modules/_sections.scss */
+#draw-header {
+  background-color: #1b2631;
+  padding: 15px;
+  color: white;
+  display: block;
+  clear: both;
+  min-height: 70px;
+  position: relative;
+}
+/* line 56, ../scss/modules/_sections.scss */
+#draw-header img {
+  float: left;
+  margin-right: 12px;
+}
+/* line 61, ../scss/modules/_sections.scss */
+#draw-header h5 {
+  font-size: 16px;
+  float: left;
+}
+
+/* line 67, ../scss/modules/_sections.scss */
+.drawer h3 {
+  color: #007aff;
+  padding: 15px;
+  margin: 0;
+}
+
+/* line 73, ../scss/modules/_sections.scss */
+.drawer i {
+  background-color: rgba(202, 204, 205, 0.4);
+  color: #00060b;
+  padding: 8px 15px;
+  display: block;
+}
+
+/* line 80, ../scss/modules/_sections.scss */
+.wsmenu > .wsmenu-list > li > span {
+  font-size: 10px;
+}
+
+/*Tiles*/
+/* line 87, ../scss/modules/_sections.scss */
+.tile, .ucmj, .absence, .failure {
+  background-repeat: no-repeat;
+  min-height: 200px;
+  display: block;
+  color: white;
+  margin: 0;
+}
+
+/* line 97, ../scss/modules/_sections.scss */
+.tile-content {
+  padding: 20px;
+  min-height: 166px;
+}
+/* line 101, ../scss/modules/_sections.scss */
+.tile-content h3 {
+  margin-top: 5px;
+  font-size: 18px;
+}
+/* line 106, ../scss/modules/_sections.scss */
+.tile-content span {
+  font-weight: lighter;
+  font-size: 10px;
+}
+
+/* line 112, ../scss/modules/_sections.scss */
+.status {
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+}
+/* line 117, ../scss/modules/_sections.scss */
+.status p {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+/* line 124, ../scss/modules/_sections.scss */
+.ucmj {
+  background: url(../img/all-articles.jpg);
+}
+
+/* line 129, ../scss/modules/_sections.scss */
+.primer {
+  position: relative;
+  top: 45px;
+  margin: 0 auto;
+}
+
+/* line 135, ../scss/modules/_sections.scss */
+.absence {
+  background: url(../img/absence-article.jpg);
+}
+
+/* line 140, ../scss/modules/_sections.scss */
+.failure {
+  background: url(../img/failure-article.jpg);
+}
+
+ /*
+WEBSLIDE 2016
+ */
+/* line 6, ../scss/modules/_components.scss */
+ul, ol {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  list-style: none;
+}
+
+/* line 7, ../scss/modules/_components.scss */
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 8, ../scss/modules/_components.scss */
+textarea {
+  min-height: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 5px 0px 5px 0px;
+}
+
+/* line 9, ../scss/modules/_components.scss */
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+  padding: 2px 2px;
+  outline: none;
+  display: block;
+  background: #fff;
+  text-indent: 4px;
+  color: #2c2c2c;
+  border: solid 1px #b9b9b9;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 10, ../scss/modules/_components.scss */
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* line 11, ../scss/modules/_components.scss */
+.button, input[type="submit"], input[type="reset"], input[type="button"] {
+  cursor: pointer;
+  padding: 0;
+}
+
+/* line 12, ../scss/modules/_components.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 13, ../scss/modules/_components.scss */
+img, object, embed, video {
+  border: 0 none;
+  max-width: 100%;
+}
+
+/* line 14, ../scss/modules/_components.scss */
+a:focus {
+  outline: none !important;
+}
+
+/* line 17, ../scss/modules/_components.scss */
+.wsmenu-list > li:hover > a {
+  text-decoration: none;
+}
+
+/* line 18, ../scss/modules/_components.scss */
+.hometext {
+  display: inline-block !important;
+}
+
+/* line 19, ../scss/modules/_components.scss */
+.megacollink {
+  width: 96% !important;
+  margin: 0% 2% !important;
+}
+
+/* line 20, ../scss/modules/_components.scss */
+.megacolimage {
+  width: 90% !important;
+  margin: 0% 5% !important;
+}
+
+/* line 21, ../scss/modules/_components.scss */
+.typographylinks {
+  width: 98% !important;
+  margin: 0% 1% !important;
+}
+
+/* line 22, ../scss/modules/_components.scss */
+.typographydiv {
+  width: 86% !important;
+  margin: 0% 7% !important;
+}
+
+/* line 23, ../scss/modules/_components.scss */
+.mainmapdiv {
+  width: 90% !important;
+  margin: 0% 5% !important;
+}
+
+/* line 24, ../scss/modules/_components.scss */
+.wsmenu-submenu .fa {
+  margin-right: 7px;
+}
+
+/* line 25, ../scss/modules/_components.scss */
+.overlapblackbg {
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+/* line 36, ../scss/modules/_components.scss */
+.overlapblackbg.menuopen {
+  display: block;
+}
+
+/* Default Theme */
+/* line 39, ../scss/modules/_components.scss */
+.wsmenu-submenu > li:hover > a {
+  color: #007aff;
+}
+
+/* line 40, ../scss/modules/_components.scss */
+.wsmenu > .wsmenu-list > li > a.active {
+  color: #007aff;
+}
+
+/* line 41, ../scss/modules/_components.scss */
+.wsmenu > .wsmenu-list > li > a:hover {
+  color: #007aff;
+}
+
+/* line 43, ../scss/modules/_components.scss */
+.wsmenu-list li:hover .wsmenu-submenu {
+  display: none;
+}
+
+/* line 44, ../scss/modules/_components.scss */
+.wsmenu-list li:hover .wsmenu-submenu .wsmenu-submenu-sub {
+  display: none;
+}
+
+/* line 45, ../scss/modules/_components.scss */
+.wsmenu-list .wsmenu-submenu .wsmenu-submenu-sub li:hover .wsmenu-submenu-sub-sub {
+  display: none;
+  list-style: none;
+  padding: 2px;
+  border: solid 1px #eeeeee;
+  background-color: #fff;
+}
+
+/* line 46, ../scss/modules/_components.scss */
+.wsmenu-list li:first-child a {
+  -webkit-border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+/* line 47, ../scss/modules/_components.scss */
+.wsmenu-list li:last-child a {
+  -webkit-border-radius: 0px 4px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+  border-right: 0px solid;
+}
+
+/* line 49, ../scss/modules/_components.scss */
+.innerpnd {
+  padding: 0px !important;
+}
+
+/* line 50, ../scss/modules/_components.scss */
+.typography-text {
+  padding: 10px 0px;
+}
+
+/*Form for desktop */
+/* line 55, ../scss/modules/_components.scss */
+.halfdiv {
+  width: 35%;
+  right: 0px !important;
+  left: auto;
+}
+
+/* line 60, ../scss/modules/_components.scss */
+.menu_form {
+  width: 100%;
+  display: block;
+}
+
+/* line 61, ../scss/modules/_components.scss */
+.menu_form input[type="text"] {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #000;
+  font-size: 13px;
+  padding: 8px 5px;
+  margin-bottom: 8px;
+}
+
+/* line 72, ../scss/modules/_components.scss */
+.menu_form textarea {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  color: #000;
+  font-size: 13px;
+  padding: 8px 5px;
+  margin-bottom: 8px;
+  min-height: 122px;
+}
+
+/* line 82, ../scss/modules/_components.scss */
+.menu_form input[type="submit"] {
+  width: 25%;
+  display: block;
+  height: 28px;
+  float: right;
+  border: solid 1px #ccc;
+  margin-right: 15px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 83, ../scss/modules/_components.scss */
+.menu_form input[type="button"] {
+  width: 25%;
+  display: block;
+  height: 28px;
+  float: right;
+  border: solid 1px #ccc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 85, ../scss/modules/_components.scss */
+.wsoffcanvasopener .wsmenu {
+  overflow-y: auto;
+  left: 0px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 95, ../scss/modules/_components.scss */
+.wsmenucontainer.wsoffcanvasopener {
+  display: block;
+  margin-left: 240px;
+}
+
+/* line 99, ../scss/modules/_components.scss */
+.wsmobileheader {
+  display: block !important;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 114, ../scss/modules/_components.scss */
+.wsmenu-list > li:hover > a {
+  text-decoration: none;
+}
+
+/* line 115, ../scss/modules/_components.scss */
+.hometext {
+  display: inline-block !important;
+}
+
+/* line 116, ../scss/modules/_components.scss */
+.megacollink {
+  width: 96% !important;
+  margin: 0% 2% !important;
+}
+
+/* line 117, ../scss/modules/_components.scss */
+.megacolimage {
+  width: 90% !important;
+  margin: 0% 5% !important;
+}
+
+/* line 118, ../scss/modules/_components.scss */
+.typographylinks {
+  width: 98% !important;
+  margin: 0% 1% !important;
+}
+
+/* line 119, ../scss/modules/_components.scss */
+.typographydiv {
+  width: 86% !important;
+  margin: 0% 7% !important;
+}
+
+/* line 120, ../scss/modules/_components.scss */
+.mainmapdiv {
+  width: 90% !important;
+  margin: 0% 5% !important;
+}
+
+/* line 122, ../scss/modules/_components.scss */
+.overlapblackbg {
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+/* line 133, ../scss/modules/_components.scss */
+.wsoffcanvasopener .overlapblackbg {
+  display: block !important;
+}
+
+/* Default Theme */
+/* line 136, ../scss/modules/_components.scss */
+.wsmenu-submenu > li:hover > a {
+  color: #007aff;
+}
+
+/* line 137, ../scss/modules/_components.scss */
+.wsmenu > .wsmenu-list > li > a.active {
+  color: #007aff;
+}
+
+/* line 138, ../scss/modules/_components.scss */
+.wsmenu > .wsmenu-list > li > a:hover {
+  color: #007aff;
+}
+
+/* line 140, ../scss/modules/_components.scss */
+.wsmenu-list li:hover .wsmenu-submenu {
+  display: none;
+}
+
+/* line 141, ../scss/modules/_components.scss */
+.wsmenu-list li:hover .wsmenu-submenu .wsmenu-submenu-sub {
+  display: none;
+}
+
+/* line 142, ../scss/modules/_components.scss */
+.wsmenu-list .wsmenu-submenu .wsmenu-submenu-sub li:hover .wsmenu-submenu-sub-sub {
+  display: none;
+  list-style: none;
+  padding: 2px;
+  border: solid 1px #eeeeee;
+  background-color: #fff;
+}
+
+/* line 143, ../scss/modules/_components.scss */
+.wsmenu-list li:first-child a {
+  -webkit-border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+/* line 144, ../scss/modules/_components.scss */
+.wsmenu-list li:last-child a {
+  -webkit-border-radius: 0px 4px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+  border-right: 0px solid;
+}
+
+/* line 146, ../scss/modules/_components.scss */
+.innerpnd {
+  padding: 0px !important;
+}
+
+/* line 147, ../scss/modules/_components.scss */
+.typography-text {
+  padding: 10px 0px;
+}
+
+/* line 149, ../scss/modules/_components.scss */
+.wsmenucontainer {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  min-height: 800px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Mobile click to drop arrow */
+/* line 164, ../scss/modules/_components.scss */
+.wsmenu-click {
+  height: 43px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* line 174, ../scss/modules/_components.scss */
+.wsmenu-click i {
+  display: block;
+  height: 23px;
+  width: 25px;
+  margin-top: 11px;
+  margin-right: 8px;
+  background-size: 25px;
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.25);
+  float: right;
+  text-align: center;
+}
+
+/* line 188, ../scss/modules/_components.scss */
+.wsmenu-click02 {
+  height: 43px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* line 198, ../scss/modules/_components.scss */
+.wsmenu-click02 i {
+  display: block;
+  height: 23px;
+  width: 25px;
+  margin-top: 11px;
+  margin-right: 8px;
+  background-size: 25px;
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.25);
+  float: right;
+  text-align: center;
+}
+
+/* line 211, ../scss/modules/_components.scss */
+.ws-activearrow > i {
+  transform: rotate(180deg);
+}
+
+/* line 213, ../scss/modules/_components.scss */
+.wsmenu-rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/*2nd UL Style*/
+/* line 221, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub {
+  width: 100% !important;
+  position: static !important;
+  left: 100% !important;
+  top: 0 !important;
+  display: none;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: solid 0px !important;
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* line 235, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub li {
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px;
+  position: relative;
+}
+
+/* line 240, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub a {
+  display: block;
+  padding: 10px 25px 10px 25px;
+  border-bottom: solid 1px #ccc;
+  font-weight: normal;
+}
+
+/* line 246, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub li a.active {
+  color: #000 !important;
+}
+
+/* line 248, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub li:hover > a {
+  background-color: #333333 !important;
+  color: #fff;
+}
+
+/* line 250, ../scss/modules/_components.scss */
+.wsmenu-list > li > a .fa {
+  margin-right: 6px;
+}
+
+/* line 252, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub-sub {
+  width: 100% !important;
+  position: static !important;
+  left: 100% !important;
+  top: 0 !important;
+  display: none;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: solid 0px !important;
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* line 266, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub-sub li {
+  margin: 0px 0px 0px 0px !important;
+}
+
+/* line 269, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub-sub a {
+  display: block;
+  color: #000;
+  padding: 10px 25px;
+  background: #000 !important;
+  border-bottom: solid 1px #ccc;
+  font-weight: normal;
+}
+
+/* line 277, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub-sub li a.active {
+  color: #000 !important;
+}
+
+/* line 278, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub-sub li:hover > a {
+  background-color: #606060 !important;
+  color: #fff;
+}
+
+/* line 279, ../scss/modules/_components.scss */
+.wsmenu {
+  position: relative;
+}
+
+/* line 281, ../scss/modules/_components.scss */
+.wsmenu .wsmenu-list {
+  height: 100%;
+  display: block !important;
+}
+
+/* line 285, ../scss/modules/_components.scss */
+.wsmenu .wsmenu-list > li {
+  width: 240px;
+  display: block;
+  float: none;
+  border-right: none;
+  background-color: transparent;
+  position: relative;
+  white-space: inherit;
+  padding: 15px;
+  border-bottom: 1px solid #cacccd;
+}
+
+/* line 299, ../scss/modules/_components.scss */
+.wsmenu > .wsmenu-list > li > a {
+  font-size: 14px;
+  text-align: left;
+  border-right: solid 0px;
+  background-color: transparent;
+  color: #007aff;
+  line-height: 20px;
+  border-bottom-color: rgba(0, 0, 0, 0.13);
+  position: static;
+  display: block;
+}
+
+/* line 311, ../scss/modules/_components.scss */
+.wsmenu > .wsmenu-list > li > a > .fa {
+  font-size: 16px;
+  color: #bfbfbf;
+}
+
+/* line 312, ../scss/modules/_components.scss */
+.wsmenu .wsmenu-list li a .arrow:after {
+  display: none !important;
+}
+
+/* line 313, ../scss/modules/_components.scss */
+.wsmenu .wsmenu-list li ul li a .fa.fa-caret-right {
+  font-size: 12px !important;
+  color: #8E8E8E;
+}
+
+/* line 315, ../scss/modules/_components.scss */
+.mobile-sub .wsmenu-submenu {
+  transform: none !important;
+  opacity: 1 !important;
+  display: none;
+  position: relative !important;
+  top: 0px;
+  background-color: #fff;
+  border: solid 1px #ccc;
+  padding: 0px;
+  visibility: visible !important;
+}
+
+/* line 326, ../scss/modules/_components.scss */
+.mobile-sub .wsmenu-submenu li {
+  position: relative;
+}
+
+/* line 328, ../scss/modules/_components.scss */
+.mobile-sub .wsmenu-submenu li a {
+  line-height: 20px;
+  height: 36px;
+  background-color: #e7e7e7 !important;
+  font-size: 13px !important;
+  padding: 8px 0px 8px 18px;
+  color: #8E8E8E;
+  display: block;
+}
+
+/* line 338, ../scss/modules/_components.scss */
+.mobile-sub .wsmenu-submenu li a:hover {
+  background-color: #e7e7e7  !important;
+  color: #666666;
+  text-decoration: underline;
+}
+
+/* line 339, ../scss/modules/_components.scss */
+.mobile-sub .wsmenu-submenu li:hover > a {
+  background-color: #e7e7e7 !important;
+  color: #666666;
+}
+
+/* line 340, ../scss/modules/_components.scss */
+.mobile-sub .wsmenu-submenu li .wsmenu-submenu-sub li a {
+  line-height: 20px;
+  height: 36px;
+  background-color: #e7e7e7 !important;
+  border-bottom: none;
+  padding-left: 28px;
+}
+
+/* line 341, ../scss/modules/_components.scss */
+.mobile-sub .wsmenu-submenu li .wsmenu-submenu-sub li .wsmenu-submenu-sub-sub li a {
+  line-height: 20px;
+  height: 36px;
+  background-color: #e7e7e7 !important;
+  border-bottom: none !important;
+  padding-left: 38px;
+  color: #8e8e8e;
+}
+
+/* line 344, ../scss/modules/_components.scss */
+.wsmenu-list .megamenu {
+  background-color: #e7e7e7;
+  color: #666666;
+  display: none;
+  position: relative !important;
+  top: 0px;
+  padding: 0px;
+  border: solid 0px;
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* line 357, ../scss/modules/_components.scss */
+.wsmenu-list li:hover .megamenu {
+  display: none;
+  position: relative !important;
+  top: 0px;
+}
+
+/* line 358, ../scss/modules/_components.scss */
+.megamenu .title {
+  color: #666666;
+  font-size: 15px !important;
+  padding: 10px 8px 10px 0px;
+}
+
+/* line 359, ../scss/modules/_components.scss */
+.halfdiv .title {
+  padding-left: 15px;
+}
+
+/* line 360, ../scss/modules/_components.scss */
+.megamenu > ul {
+  width: 100% !important;
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px !important;
+}
+
+/* line 366, ../scss/modules/_components.scss */
+.megamenu > ul > li > a {
+  padding: 9px 14px !important;
+  line-height: normal !important;
+  font-size: 13px !important;
+  background-color: #e7e7e7 !important;
+  color: #666666;
+}
+
+/* line 373, ../scss/modules/_components.scss */
+.megamenu > ul > li > a:hover {
+  background-color: #000000 !important;
+}
+
+/* line 375, ../scss/modules/_components.scss */
+.ad-style {
+  width: 100% !important;
+}
+
+/* line 377, ../scss/modules/_components.scss */
+.megamenu ul li.title {
+  line-height: 26px;
+  color: #666666;
+  margin: 0px;
+  font-size: 15px;
+  padding: 7px 13px !important;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent !important;
+}
+
+/* line 386, ../scss/modules/_components.scss */
+.halfdiv {
+  width: 100%;
+  display: block;
+}
+
+/* line 387, ../scss/modules/_components.scss */
+.halfmenu {
+  width: 100%;
+  display: block;
+}
+
+/* line 389, ../scss/modules/_components.scss */
+.menu_form {
+  padding: 10px 10px 63px 10px;
+  background-color: #e7e7e7;
+}
+
+/* line 391, ../scss/modules/_components.scss */
+.menu_form input[type="button"] {
+  width: 46%;
+}
+
+/* line 392, ../scss/modules/_components.scss */
+.menu_form input[type="submit"] {
+  width: 46%;
+}
+
+/* line 393, ../scss/modules/_components.scss */
+.menu_form textarea {
+  min-height: 100px;
+}
+
+/* line 395, ../scss/modules/_components.scss */
+.wsmenu {
+  width: 240px;
+  left: -240px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 0px;
+  z-index: 100;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border: none !important;
+  background-color: #fff !important;
+}
+
+/* Navigation arrow Animation */
+/* line 419, ../scss/modules/_components.scss */
+.animated-arrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 102;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 429, ../scss/modules/_components.scss */
+.callusicon {
+  color: #c9c9c9;
+  font-size: 25px;
+  position: absolute;
+  right: 18px;
+  top: 29px;
+  z-index: 102;
+  transition: all 0.4s ease-in-out 0s;
+  font-size: 19px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 445, ../scss/modules/_components.scss */
+.callusicon:focus, callusicon:hover {
+  color: #fff !important;
+}
+
+/* line 450, ../scss/modules/_components.scss */
+.smallogo {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-top: 9px;
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+  height: 52px;
+  background: #262626;
+  background: -moz-linear-gradient(top, #262626 0, #1c1c1c 50%, #262626 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #262626), color-stop(50%, #1c1c1c), color-stop(100%, #262626));
+  background: -webkit-linear-gradient(top, #262626 0, #1c1c1c 50%, #262626 100%);
+  background: -o-linear-gradient(top, #262626 0, #1c1c1c 50%, #262626 100%);
+  background: -ms-linear-gradient(top, #262626 0, #1c1c1c 50%, #262626 100%);
+  background: linear-gradient(to bottom, #262626 0%, #1c1c1c 50%, #262626 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#262626', endColorstr='#262626', GradientType=0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* line 473, ../scss/modules/_components.scss */
+.animated-arrow {
+  cursor: pointer;
+  padding: 13px 35px 16px 0px;
+  margin: 18px 0 0 18px;
+}
+
+/* line 478, ../scss/modules/_components.scss */
+.animated-arrow span, .animated-arrow span:before, .animated-arrow span:after {
+  cursor: pointer;
+  height: 2px;
+  width: 35px;
+  background: #007aff;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+/* line 487, ../scss/modules/_components.scss */
+.animated-arrow span:before {
+  top: -9px;
+  color: white !important;
+}
+
+/* line 492, ../scss/modules/_components.scss */
+.animated-arrow span:after {
+  bottom: -9px;
+  color: white !important;
+}
+
+/* line 497, ../scss/modules/_components.scss */
+.animated-arrow span, .animated-arrow span:before, .animated-arrow span:after {
+  transition: all 500ms ease-in-out;
+}
+
+/* line 500, ../scss/modules/_components.scss */
+.wsoffcanvasopener .animated-arrow span {
+  background-color: transparent;
+}
+
+/* line 503, ../scss/modules/_components.scss */
+.wsoffcanvasopener .animated-arrow span:before, .animated-arrow.active span:after {
+  top: 9px;
+}
+
+/* line 506, ../scss/modules/_components.scss */
+.wsoffcanvasopener .animated-arrow span:before {
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: 0px;
+}
+
+/* line 515, ../scss/modules/_components.scss */
+.wsoffcanvasopener .animated-arrow span:after {
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/*Animation None */
+/* line 525, ../scss/modules/_components.scss */
+.wsmenu-list li > .wsmenu-submenu {
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  visibility: visible !important;
+}
+
+/* line 537, ../scss/modules/_components.scss */
+.wsmenu-list li:hover > .wsmenu-submenu {
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  visibility: visible !important;
+}
+
+/* line 549, ../scss/modules/_components.scss */
+.wsmenu-submenu li > .wsmenu-submenu-sub {
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  visibility: visible !important;
+}
+
+/* line 561, ../scss/modules/_components.scss */
+.wsmenu-submenu li:hover > .wsmenu-submenu-sub {
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  visibility: visible !important;
+  opacity: 1  !important;
+}
+
+/* line 574, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub li > .wsmenu-submenu-sub-sub {
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  visibility: visible !important;
+  opacity: 1  !important;
+}
+
+/* line 587, ../scss/modules/_components.scss */
+.wsmenu-submenu-sub li:hover > .wsmenu-submenu-sub-sub {
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  visibility: visible !important;
+  opacity: 1  !important;
+}
+
+/* line 601, ../scss/modules/_components.scss */
+.wsmenu-list li > .megamenu {
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  visibility: visible !important;
+  opacity: 1  !important;
+}
+
+/* line 614, ../scss/modules/_components.scss */
+.wsmenu-list li:hover > .megamenu {
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -webkit-transform: none !important;
+  visibility: visible !important;
+  opacity: 1  !important;
+}
+
+/* LAYOUTS- Page Layout Styles*/
+/* Navigation */
+/* line 3, ../scss/layouts/_nav.scss */
+.nav-pills {
+  border: 1px solid #007aff;
+  width: 449px;
+}
+/* line 7, ../scss/layouts/_nav.scss */
+.nav-pills li {
+  border-right: 1px solid #007aff;
+}
+
+/* line 12, ../scss/layouts/_nav.scss */
+.nav-pills > li:last-child {
+  border-right: none;
+}
+
+/* line 15, ../scss/layouts/_nav.scss */
+.nav-pills > li + li {
+  margin-left: 0px;
+}
+
+/* line 19, ../scss/layouts/_nav.scss */
+.nav-pills > li > a {
+  border-radius: 0px;
+  padding: 10px 28px;
+}
+
+/* line 23, ../scss/layouts/_nav.scss */
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  border-radius: 0px;
+}
+
+/* line 27, ../scss/layouts/_nav.scss */
+.nav > li > a:hover, .nav > li > a:focus {
+  border-radius: 0px;
+}
+
+/* line 1, ../scss/layouts/_header.scss */
+.header {
+  width: 100%;
+  display: block;
+  min-height: 64px;
+  padding-top: 0px;
+  background-color: white;
+  background-size: cover;
+  border-bottom: 1px solid #cacccd;
+}
+
+/* line 11, ../scss/layouts/_header.scss */
+.nav-header {
+  background-color: white;
+  min-height: 90px;
+  display: block;
+  padding: 23px 15px;
+  margin-bottom: 30px;
+}
+
+/* line 19, ../scss/layouts/_header.scss */
+.title {
+  color: #00060b;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* line 26, ../scss/layouts/_header.scss */
+.view {
+  color: #007aff;
+  font-weight: lighter;
+  font-size: 18px;
+  text-align: right;
+}

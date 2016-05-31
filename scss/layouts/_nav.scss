@@ -1,0 +1,29 @@
+/* Navigation */
+
+.nav-pills {
+	border:1px solid $blue-color;
+	width:449px;
+
+	li {
+	border-right: 1px solid $blue-color;
+	}
+}
+
+.nav-pills > li:last-child {
+	border-right:none;
+}
+.nav-pills > li + li {
+	margin-left:0px;
+}
+
+.nav-pills > li > a {
+	border-radius:0px;
+	padding: 10px 28px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	border-radius:0px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	border-radius:0px;
+}

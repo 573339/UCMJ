@@ -1,0 +1,143 @@
+/*Splash*/
+
+.splash {
+  background: url(../img/splash.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+  h1 {
+  font-size:40px;
+  color:$white-color;
+  font-weight:600;
+  line-height:120%;
+  padding:20px;
+  margin:0
+  }
+
+  h3 {
+  font-size:24px;
+  color:$white-color;
+  font-weight:lighter;
+  padding:15px;
+  }
+}
+
+#splash-title {
+	margin:150px auto;
+	text-align:center;
+	width:500px;
+	position:relative;
+	top:50%;
+}
+
+hr {
+	border: solid $white-color;
+    border-width: 1px 0 0;
+    clear: both;
+    height: 0;
+    width: 15%;
+    margin:0 auto;
+}
+
+/*UCMJ Drawer*/
+
+#draw-header {
+  background-color:$dark-blue;
+  padding:15px;
+  color:$white-color;
+  display:block;
+  clear:both;
+  min-height:70px;
+  position:relative;
+
+  img {
+  float:left;
+  margin-right:12px;
+  }
+
+  h5 {
+  font-size:16px;
+  float:left;
+  }
+}
+
+.drawer h3 {
+  color:$blue-color;
+  padding:15px;
+  margin:0;
+}
+
+.drawer i {
+  background-color:rgba(202, 204, 205, 0.4);
+  color:$black-color;
+  padding:8px 15px;
+  display:block;
+}
+
+.wsmenu > .wsmenu-list > li > span {
+  font-size:10px;
+}
+
+
+/*Tiles*/
+
+.tile {
+  background-repeat:no-repeat;
+  min-height:200px;
+  display:block;
+  color:$white-color;
+  margin: 0;
+
+  
+}
+
+.tile-content {
+  padding:20px;
+  min-height:166px;
+
+  h3 {
+  margin-top:5px;
+  font-size:18px;
+  }
+
+  span {
+  font-weight:lighter;
+  font-size:10px;
+  }
+}
+
+.status {
+  display:inline-block;
+  margin:0;
+  width:100%;
+
+  p {
+  font-size:10px;
+  text-transform:uppercase;
+  padding:0 20px;
+  }
+}
+
+.ucmj{
+  @extend .tile;
+  background:url(../img/all-articles.jpg); 
+}
+
+.primer {
+  position:relative;
+  top:45px;
+  margin:0 auto;
+}
+
+.absence {
+  @extend .tile;
+  background:url(../img/absence-article.jpg); 
+}
+
+.failure {
+  @extend .tile;
+  background:url(../img/failure-article.jpg); 
+}

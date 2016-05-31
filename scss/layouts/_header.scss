@@ -1,0 +1,31 @@
+.header{
+	width:100%;
+	display:block;
+	min-height:64px;
+	padding-top:0px;
+	background-color:$white-color;
+	background-size:cover;
+	border-bottom:1px solid $grey-color; 
+	}
+
+.nav-header {
+	background-color:$white-color;
+	min-height:90px;
+	display:block;
+	padding:23px 15px;
+	margin-bottom:30px;
+}
+
+.title {
+	color:$black-color;
+	font-weight:bold;
+	font-size:24px;
+	text-align:center;
+}
+
+.view {
+	color:$blue-color;
+	font-weight:lighter;
+	font-size:18px;
+	text-align:right;
+}
