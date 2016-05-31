@@ -123,12 +123,12 @@ hr {
 
 /*Tiles*/
 /* line 87, ../scss/modules/_sections.scss */
-.tile, .ucmj, .absence, .failure {
+.tile, .ucmj, .absence, .failure, .false, .drunken, .wrong, .rape, .larceny, .assault {
   background-repeat: no-repeat;
   min-height: 200px;
   display: block;
   color: white;
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 /* line 97, ../scss/modules/_sections.scss */
@@ -180,6 +180,51 @@ hr {
 /* line 140, ../scss/modules/_sections.scss */
 .failure {
   background: url(../img/failure-article.jpg);
+}
+
+/* line 145, ../scss/modules/_sections.scss */
+.false {
+  background: url(../img/false-article.jpg);
+}
+
+/* line 150, ../scss/modules/_sections.scss */
+.drunken {
+  background: url(../img/drunken-article.jpg);
+}
+
+/* line 155, ../scss/modules/_sections.scss */
+.wrong {
+  background: url(../img/wrongful-article.jpg);
+}
+
+/* line 160, ../scss/modules/_sections.scss */
+.rape {
+  background: url(../img/rape-article.jpg);
+}
+
+/* line 165, ../scss/modules/_sections.scss */
+.larceny {
+  background: url(../img/larceny-article.jpg);
+}
+
+/* line 170, ../scss/modules/_sections.scss */
+.assault {
+  background: url(../img/assault-article.jpg);
+}
+
+/* line 175, ../scss/modules/_sections.scss */
+.green {
+  border-top: 4px solid #2dcc70;
+}
+
+/* line 179, ../scss/modules/_sections.scss */
+.red {
+  border-top: 4px solid #e74c3c;
+}
+
+/* line 184, ../scss/modules/_sections.scss */
+.yellow {
+  border-top: 4px solid #f5be27;
 }
 
  /*

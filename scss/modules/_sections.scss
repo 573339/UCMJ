@@ -89,7 +89,7 @@ hr {
   min-height:200px;
   display:block;
   color:$white-color;
-  margin: 0;
+  margin-bottom: 30px;
 
   
 }
@@ -141,3 +141,50 @@ hr {
   @extend .tile;
   background:url(../img/failure-article.jpg); 
 }
+
+.false {
+  @extend .tile;
+  background:url(../img/false-article.jpg); 
+}
+
+.drunken {
+  @extend .tile;
+  background:url(../img/drunken-article.jpg); 
+}
+
+.wrong {
+  @extend .tile;
+  background:url(../img/wrongful-article.jpg); 
+}
+
+.rape {
+  @extend .tile;
+  background:url(../img/rape-article.jpg); 
+}
+
+.larceny {
+  @extend .tile;
+  background:url(../img/larceny-article.jpg); 
+}
+
+.assault {
+  @extend .tile;
+  background:url(../img/assault-article.jpg); 
+}
+
+.green {
+  border-top:4px solid $green-color;
+}
+
+.red{
+  border-top:4px solid $red-color;
+}
+
+
+.yellow {
+  border-top:4px solid $yellow-color;
+}
+
+
+
+
