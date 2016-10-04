@@ -40,7 +40,7 @@
       <div class="row">
     	  <div class="col-md-4"> <a id="wsnavtoggle" class="animated-arrow"><span></span></a></div>
         <div class="col-md-4"><h3 class="title">Primer</h3></div> 
-        <div class="col-md-4"><h3 Class="view">View All Articles</h3></div>
+        <div class="col-md-4 view"><h3 Class="view"><a href="#">View All Articles</a></h3></div>
         </div>  
         
     </div>
@@ -85,11 +85,12 @@
           <div class="ucmj text-center">
             <div class="tile-content primer">
               <h3>UCMJ Primer Articles</h3>
-              <a class="btn btn-default" href="#" role="button">View All</a>
+              <a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#primer">View All</a>
            </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 tile-hover">
+          <a href="#">
           <div class="absence green">
              <div class="tile-content">
               <span>886. ARTICLE 86.</span>
@@ -99,8 +100,10 @@
           <p>3 of 3 Completed</p>
           </div>
         </div>
+       </a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 tile-hover">
+          <a href="#">
           <div class="failure yellow">
             <div class="tile-content">
               <span>892. ARTICLE 92.</span>
@@ -110,11 +113,13 @@
               <p>2 of 5 Completed</p>
             </div>
         </div>
+        </a>
         </div>
       </div>
 
         <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 tile-hover">
+          <a href="#">
           <div class="false green">
              <div class="tile-content">
               <span>907. ARTICLE 107. </span>
@@ -124,8 +129,10 @@
           <p>5 of 5 Completed</p>
           </div>
         </div>
+        </a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 tile-hover">
+          <a href="#">
           <div class="drunken yellow">
              <div class="tile-content">
               <span>911. ARTICLE 111. </span>
@@ -135,8 +142,10 @@
           <p>2 of 3 Completed</p>
           </div>
         </div>
+        </a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 tile-hover">
+          <a href="#">
           <div class="wrong red">
             <div class="tile-content">
               <span>912a. ARTICLE 112a.</span>
@@ -146,11 +155,13 @@
               <p>1 of 5 Completed</p>
             </div>
         </div>
+        </a>
         </div>
       </div>
 
           <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 tile-hover">
+          <a href="#">
           <div class="rape red">
              <div class="tile-content">
               <span>920. ARTICLE 120.</span>
@@ -160,8 +171,10 @@
           <p>0 of 2 Completed</p>
           </div>
         </div>
+        </a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 tile-hover">
+          <a href="#">
           <div class="larceny yellow">
              <div class="tile-content">
               <span>921. ARTICLE 121.</span>
@@ -171,8 +184,10 @@
           <p>2 of 4 Completed</p>
           </div>
         </div>
+        </a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 tile-hover">
+          <a href="#">
           <div class="assault red">
             <div class="tile-content">
               <span>928. ARTICLE 128.</span>
@@ -182,10 +197,47 @@
               <p>0 of 5 Completed</p>
             </div>
         </div>
+        </a>
         </div>
       </div>
     </div>
 
+                        <!-- NOTE MODAL ONE -->
+                        <div id="primer" class="modal fade" role="dialog">
+                          <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header modal-bkgd">
+                                <h1>UCMJ Primer Articles</h1>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="modal-article">
+                                  <span>886. ARTICLE 86.</span>
+                                  <h2>Absence Without Leave</h2>
+                                  <p>Any member of the armed forces who, without authority:</p>
+                                  <ol class="primer-articles">
+                                    <li>Fails to go to his appointed place of duty at the time prescribed;</li>
+                                    <li>Goes from that place; or999</li>
+                                    <li>Absents himself or remains absent from his unit, organization, or place of duty at which he is required to be at the time prescribed; shall be punished as a court-martial may direct.</ol>
+                                  </ol>
+                                </div>
+
+                                   <div class="modal-article">
+                                  <span>892. ARTICLE 92.</span>
+                                  <h2>Failure to Obey Order or Regulation</h2>
+                                  <p>Any person subject to this chapter who:</p>
+                                  <ol class="primer-articles">
+                                    <li>Violates or fails to obey any lawful general order or regulation;</li>
+                                    <li>Having knowledge of any other lawful order issued by any member of the armed forces, which it is his    duty to obey, fails to obey the order; or</li>
+                                    <li>Is derelict in the performance of his duties; shall be punished as a court-martial may dire</ol>
+                                  </ol>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- NOTE END MODAL ONE -->
 </div>
 </body>
 </html>

@@ -131,100 +131,174 @@ hr {
   margin-bottom: 30px;
 }
 
-/* line 97, ../scss/modules/_sections.scss */
+/* line 96, ../scss/modules/_sections.scss */
+.tile-hover a {
+  text-decoration: none;
+}
+
+/* line 101, ../scss/modules/_sections.scss */
 .tile-content {
   padding: 20px;
   min-height: 166px;
 }
-/* line 101, ../scss/modules/_sections.scss */
+/* line 105, ../scss/modules/_sections.scss */
 .tile-content h3 {
   margin-top: 5px;
   font-size: 18px;
 }
-/* line 106, ../scss/modules/_sections.scss */
+/* line 110, ../scss/modules/_sections.scss */
 .tile-content span {
   font-weight: lighter;
   font-size: 10px;
 }
 
-/* line 112, ../scss/modules/_sections.scss */
+/* line 116, ../scss/modules/_sections.scss */
 .status {
   display: inline-block;
   margin: 0;
   width: 100%;
 }
-/* line 117, ../scss/modules/_sections.scss */
+/* line 121, ../scss/modules/_sections.scss */
 .status p {
   font-size: 10px;
   text-transform: uppercase;
   padding: 0 20px;
 }
 
-/* line 124, ../scss/modules/_sections.scss */
+/* line 128, ../scss/modules/_sections.scss */
 .ucmj {
   background: url(../img/all-articles.jpg);
 }
 
-/* line 129, ../scss/modules/_sections.scss */
+/* line 133, ../scss/modules/_sections.scss */
 .primer {
   position: relative;
   top: 45px;
   margin: 0 auto;
 }
 
-/* line 135, ../scss/modules/_sections.scss */
+/* line 139, ../scss/modules/_sections.scss */
 .absence {
   background: url(../img/absence-article.jpg);
 }
 
-/* line 140, ../scss/modules/_sections.scss */
+/* line 144, ../scss/modules/_sections.scss */
 .failure {
   background: url(../img/failure-article.jpg);
 }
 
-/* line 145, ../scss/modules/_sections.scss */
+/* line 149, ../scss/modules/_sections.scss */
 .false {
   background: url(../img/false-article.jpg);
 }
 
-/* line 150, ../scss/modules/_sections.scss */
+/* line 154, ../scss/modules/_sections.scss */
 .drunken {
   background: url(../img/drunken-article.jpg);
 }
 
-/* line 155, ../scss/modules/_sections.scss */
+/* line 159, ../scss/modules/_sections.scss */
 .wrong {
   background: url(../img/wrongful-article.jpg);
 }
 
-/* line 160, ../scss/modules/_sections.scss */
+/* line 164, ../scss/modules/_sections.scss */
 .rape {
   background: url(../img/rape-article.jpg);
 }
 
-/* line 165, ../scss/modules/_sections.scss */
+/* line 169, ../scss/modules/_sections.scss */
 .larceny {
   background: url(../img/larceny-article.jpg);
 }
 
-/* line 170, ../scss/modules/_sections.scss */
+/* line 174, ../scss/modules/_sections.scss */
 .assault {
   background: url(../img/assault-article.jpg);
 }
 
-/* line 175, ../scss/modules/_sections.scss */
+/* line 179, ../scss/modules/_sections.scss */
 .green {
   border-top: 4px solid #2dcc70;
 }
 
-/* line 179, ../scss/modules/_sections.scss */
+/* line 183, ../scss/modules/_sections.scss */
 .red {
   border-top: 4px solid #e74c3c;
 }
 
-/* line 184, ../scss/modules/_sections.scss */
+/* line 188, ../scss/modules/_sections.scss */
 .yellow {
   border-top: 4px solid #f5be27;
+}
+
+/*SCENARIOS*/
+/* line 195, ../scss/modules/_sections.scss */
+.scenario {
+  padding: 0;
+}
+
+/* line 199, ../scss/modules/_sections.scss */
+.bar {
+  padding: 0;
+  background: white;
+  max-height: 65px;
+}
+
+/* line 205, ../scss/modules/_sections.scss */
+.box {
+  background-color: #00060b;
+  min-height: 130px;
+  opacity: 0.9;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+/* line 213, ../scss/modules/_sections.scss */
+.box h4 {
+  color: white;
+  padding: 25px;
+}
+
+/* line 220, ../scss/modules/_sections.scss */
+.article {
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  padding: 0 27px;
+}
+/* line 226, ../scss/modules/_sections.scss */
+.article p {
+  font-size: 12px;
+  color: #00060b;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* line 235, ../scss/modules/_sections.scss */
+.progress {
+  height: 5px;
+  width: 660px;
+  margin: 0 auto;
+  float: none;
+}
+
+/* line 242, ../scss/modules/_sections.scss */
+.progress-bar {
+  float: none;
+}
+
+/* line 246, ../scss/modules/_sections.scss */
+.back {
+  float: left;
+  padding: 20px 50px;
+}
+
+/* line 252, ../scss/modules/_sections.scss */
+.continue {
+  float: right;
+  padding: 20px 50px;
 }
 
  /*
@@ -1105,7 +1179,7 @@ a:focus {
 .animated-arrow {
   cursor: pointer;
   padding: 13px 35px 16px 0px;
-  margin: 18px 0 0 18px;
+  margin: 7px 0 0 18px;
 }
 
 /* line 478, ../scss/modules/_components.scss */
@@ -1275,6 +1349,78 @@ a:focus {
   opacity: 1  !important;
 }
 
+/* Modal Windows */
+/* line 629, ../scss/modules/_components.scss */
+.modal-body {
+  padding: 15px 30px;
+}
+
+/* line 633, ../scss/modules/_components.scss */
+.modal-bkgd {
+  background: #00060b url("../img/modal-header.jpg") no-repeat center center;
+}
+/* line 636, ../scss/modules/_components.scss */
+.modal-bkgd h1 {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  margin: 15px 0 0 0;
+}
+
+/* line 644, ../scss/modules/_components.scss */
+.modal-dialog {
+  width: 585px;
+}
+
+/* line 648, ../scss/modules/_components.scss */
+.close {
+  float: right;
+  font-size: 35px;
+  font-weight: lighter;
+  line-height: 1;
+  color: white;
+  filter: alpha(opacity=20);
+  position: relative;
+  top: -55px;
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* line 661, ../scss/modules/_components.scss */
+.close:hover, .close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 667, ../scss/modules/_components.scss */
+.modal-article {
+  border-bottom: 1px solid #cacccd;
+  padding: 20px 0;
+}
+/* line 672, ../scss/modules/_components.scss */
+.modal-article span {
+  color: #007aff;
+  font-size: 13px;
+}
+/* line 677, ../scss/modules/_components.scss */
+.modal-article h2 {
+  font-size: 32px;
+  color: #00060b;
+  margin: 0 0 15px 0;
+  font-weight: lighter;
+}
+
+/* line 685, ../scss/modules/_components.scss */
+.primer-articles {
+  padding: 0 30px;
+}
+
+/* line 689, ../scss/modules/_components.scss */
+.primer-articles li {
+  list-style-type: decimal;
+}
+
 /* LAYOUTS- Page Layout Styles*/
 /* Navigation */
 /* line 3, ../scss/layouts/_nav.scss */
@@ -1317,7 +1463,7 @@ a:focus {
 .header {
   width: 100%;
   display: block;
-  min-height: 64px;
+  max-height: 43px;
   padding-top: 0px;
   background-color: white;
   background-size: cover;
@@ -1337,14 +1483,35 @@ a:focus {
 .title {
   color: #00060b;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
+  margin: 0px;
+  padding: 10px 0;
 }
 
-/* line 26, ../scss/layouts/_header.scss */
-.view {
+/* line 28, ../scss/layouts/_header.scss */
+.view, .exit {
   color: #007aff;
   font-weight: lighter;
   font-size: 18px;
   text-align: right;
+  display: block;
+  margin: 4px 0;
+}
+
+/* line 37, ../scss/layouts/_header.scss */
+.view a, .exit a {
+  text-decoration: none;
+}
+
+/* line 41, ../scss/layouts/_header.scss */
+.exit {
+  text-align: left;
+  text-decoration: none;
+}
+
+/* line 47, ../scss/layouts/_header.scss */
+.subnav p {
+  font-size: 18px;
+  color: #007aff;
 }
