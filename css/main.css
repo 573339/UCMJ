@@ -20,6 +20,12 @@ body {
   position: relative;
 }
 
+/* line 17, ../scss/base/_base.scss */
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 /* MODULES- Individual Site Components*/
 /* line 1, ../scss/modules/_buttons.scss */
 .btn {
@@ -31,7 +37,76 @@ body {
   color: white;
   background-color: #007aff;
   border: none;
+  border-radius: 4px;
+}
+
+/* line 13, ../scss/modules/_buttons.scss */
+.btn-primary {
+  background-color: white;
+  color: #007aff;
+  border: none;
+  padding: 10px;
+}
+
+/* line 20, ../scss/modules/_buttons.scss */
+.btn-primary:hover {
+  background-color: #007aff;
+  color: white;
+}
+
+/* line 25, ../scss/modules/_buttons.scss */
+.btn-link {
+  background-color: #50565b;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 31, ../scss/modules/_buttons.scss */
+.btn-link:hover {
+  background-color: #cacccd;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 37, ../scss/modules/_buttons.scss */
+.btn-success {
+  color: white;
+  background-color: #007aff;
   border-radius: 0px;
+  text-decoration: none;
+  border-color: #007aff;
+}
+
+/* line 45, ../scss/modules/_buttons.scss */
+.btn-success:hover {
+  background-color: #007aff;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 52, ../scss/modules/_buttons.scss */
+.redo {
+  float: right;
+  display: block;
+  margin: 15px;
+  padding: 5px 15px;
+}
+
+/* line 59, ../scss/modules/_buttons.scss */
+.grid {
+  padding-right: 0;
+}
+
+/* line 63, ../scss/modules/_buttons.scss */
+.back {
+  float: left;
+  padding: 20px 40px;
+}
+
+/* line 69, ../scss/modules/_buttons.scss */
+.continue {
+  float: right;
+  padding: 20px 40px;
 }
 
 /*Splash*/
@@ -79,8 +154,15 @@ hr {
   margin: 0 auto;
 }
 
+/* line 45, ../scss/modules/_sections.scss */
+#splash-title a {
+  text-decoration: none;
+  padding: 20px 40px;
+  font-size: 18px;
+}
+
 /*UCMJ Drawer*/
-/* line 47, ../scss/modules/_sections.scss */
+/* line 53, ../scss/modules/_sections.scss */
 #draw-header {
   background-color: #1b2631;
   padding: 15px;
@@ -90,25 +172,25 @@ hr {
   min-height: 70px;
   position: relative;
 }
-/* line 56, ../scss/modules/_sections.scss */
+/* line 62, ../scss/modules/_sections.scss */
 #draw-header img {
   float: left;
   margin-right: 12px;
 }
-/* line 61, ../scss/modules/_sections.scss */
+/* line 67, ../scss/modules/_sections.scss */
 #draw-header h5 {
   font-size: 16px;
   float: left;
 }
 
-/* line 67, ../scss/modules/_sections.scss */
+/* line 73, ../scss/modules/_sections.scss */
 .drawer h3 {
   color: #007aff;
   padding: 15px;
   margin: 0;
 }
 
-/* line 73, ../scss/modules/_sections.scss */
+/* line 79, ../scss/modules/_sections.scss */
 .drawer i {
   background-color: rgba(202, 204, 205, 0.4);
   color: #00060b;
@@ -116,13 +198,18 @@ hr {
   display: block;
 }
 
-/* line 80, ../scss/modules/_sections.scss */
+/* line 86, ../scss/modules/_sections.scss */
 .wsmenu > .wsmenu-list > li > span {
   font-size: 10px;
 }
 
 /*Tiles*/
-/* line 87, ../scss/modules/_sections.scss */
+/* line 93, ../scss/modules/_sections.scss */
+#grid > .grid:last-child {
+  padding-right: 15px;
+}
+
+/* line 97, ../scss/modules/_sections.scss */
 .tile, .ucmj, .absence, .failure, .false, .drunken, .wrong, .rape, .larceny, .assault {
   background-repeat: no-repeat;
   min-height: 200px;
@@ -131,121 +218,161 @@ hr {
   margin-bottom: 30px;
 }
 
-/* line 96, ../scss/modules/_sections.scss */
+/* line 106, ../scss/modules/_sections.scss */
 .tile-hover a {
   text-decoration: none;
 }
 
-/* line 101, ../scss/modules/_sections.scss */
+/* line 111, ../scss/modules/_sections.scss */
 .tile-content {
   padding: 20px;
   min-height: 166px;
 }
-/* line 105, ../scss/modules/_sections.scss */
+/* line 115, ../scss/modules/_sections.scss */
+.tile-content h2 {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-top: 5px;
+}
+/* line 121, ../scss/modules/_sections.scss */
 .tile-content h3 {
   margin-top: 5px;
   font-size: 18px;
 }
-/* line 110, ../scss/modules/_sections.scss */
+/* line 126, ../scss/modules/_sections.scss */
 .tile-content span {
   font-weight: lighter;
   font-size: 10px;
 }
+/* line 131, ../scss/modules/_sections.scss */
+.tile-content p {
+  font-size: 12px;
+}
 
-/* line 116, ../scss/modules/_sections.scss */
+/* line 136, ../scss/modules/_sections.scss */
 .status {
   display: inline-block;
   margin: 0;
   width: 100%;
 }
-/* line 121, ../scss/modules/_sections.scss */
+/* line 141, ../scss/modules/_sections.scss */
 .status p {
   font-size: 10px;
   text-transform: uppercase;
   padding: 0 20px;
 }
 
-/* line 128, ../scss/modules/_sections.scss */
+/* line 148, ../scss/modules/_sections.scss */
 .ucmj {
   background: url(../img/all-articles.jpg);
 }
 
-/* line 133, ../scss/modules/_sections.scss */
+/* line 153, ../scss/modules/_sections.scss */
 .primer {
   position: relative;
   top: 45px;
   margin: 0 auto;
 }
 
-/* line 139, ../scss/modules/_sections.scss */
+/* line 159, ../scss/modules/_sections.scss */
 .absence {
   background: url(../img/absence-article.jpg);
 }
 
-/* line 144, ../scss/modules/_sections.scss */
+/* line 164, ../scss/modules/_sections.scss */
 .failure {
   background: url(../img/failure-article.jpg);
 }
 
-/* line 149, ../scss/modules/_sections.scss */
+/* line 169, ../scss/modules/_sections.scss */
 .false {
   background: url(../img/false-article.jpg);
 }
 
-/* line 154, ../scss/modules/_sections.scss */
+/* line 174, ../scss/modules/_sections.scss */
 .drunken {
   background: url(../img/drunken-article.jpg);
 }
 
-/* line 159, ../scss/modules/_sections.scss */
+/* line 179, ../scss/modules/_sections.scss */
 .wrong {
   background: url(../img/wrongful-article.jpg);
 }
 
-/* line 164, ../scss/modules/_sections.scss */
+/* line 184, ../scss/modules/_sections.scss */
 .rape {
   background: url(../img/rape-article.jpg);
 }
 
-/* line 169, ../scss/modules/_sections.scss */
+/* line 189, ../scss/modules/_sections.scss */
 .larceny {
   background: url(../img/larceny-article.jpg);
 }
 
-/* line 174, ../scss/modules/_sections.scss */
+/* line 194, ../scss/modules/_sections.scss */
 .assault {
   background: url(../img/assault-article.jpg);
 }
 
-/* line 179, ../scss/modules/_sections.scss */
+/* line 199, ../scss/modules/_sections.scss */
 .green {
   border-top: 4px solid #2dcc70;
 }
 
-/* line 183, ../scss/modules/_sections.scss */
+/* line 203, ../scss/modules/_sections.scss */
 .red {
   border-top: 4px solid #e74c3c;
 }
 
-/* line 188, ../scss/modules/_sections.scss */
+/* line 208, ../scss/modules/_sections.scss */
 .yellow {
   border-top: 4px solid #f5be27;
 }
 
+/*SCENARIO TILES*/
+/* line 215, ../scss/modules/_sections.scss */
+.scenario-tile, .larcenyA, .larcenyB, .larcenyC, .larcenyD {
+  background-repeat: no-repeat;
+  min-height: 232px;
+  display: block;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* line 223, ../scss/modules/_sections.scss */
+.larcenyA {
+  background: url(../img/larceny-thumb1.jpg);
+}
+
+/* line 229, ../scss/modules/_sections.scss */
+.larcenyB {
+  background: url(../img/larceny-thumb2.jpg);
+}
+
+/* line 235, ../scss/modules/_sections.scss */
+.larcenyC {
+  background: url(../img/larceny-thumb3.jpg);
+}
+
+/* line 241, ../scss/modules/_sections.scss */
+.larcenyD {
+  background: url(../img/larceny-thumb4.jpg);
+}
+
 /*SCENARIOS*/
-/* line 195, ../scss/modules/_sections.scss */
+/* line 249, ../scss/modules/_sections.scss */
 .scenario {
   padding: 0;
 }
 
-/* line 199, ../scss/modules/_sections.scss */
+/* line 253, ../scss/modules/_sections.scss */
 .bar {
   padding: 0;
   background: white;
   max-height: 65px;
 }
 
-/* line 205, ../scss/modules/_sections.scss */
+/* line 259, ../scss/modules/_sections.scss */
 .box {
   background-color: #00060b;
   min-height: 130px;
@@ -254,20 +381,13 @@ hr {
   position: absolute;
   bottom: 0px;
 }
-/* line 213, ../scss/modules/_sections.scss */
+/* line 267, ../scss/modules/_sections.scss */
 .box h4 {
   color: white;
   padding: 25px;
 }
 
-/* line 220, ../scss/modules/_sections.scss */
-.article {
-  display: inline-block;
-  text-align: center;
-  width: auto;
-  padding: 0 27px;
-}
-/* line 226, ../scss/modules/_sections.scss */
+/* line 276, ../scss/modules/_sections.scss */
 .article p {
   font-size: 12px;
   color: #00060b;
@@ -276,7 +396,7 @@ hr {
   margin: 0;
 }
 
-/* line 235, ../scss/modules/_sections.scss */
+/* line 285, ../scss/modules/_sections.scss */
 .progress {
   height: 5px;
   width: 660px;
@@ -284,21 +404,49 @@ hr {
   float: none;
 }
 
-/* line 242, ../scss/modules/_sections.scss */
+/* line 292, ../scss/modules/_sections.scss */
 .progress-bar {
   float: none;
 }
 
-/* line 246, ../scss/modules/_sections.scss */
-.back {
-  float: left;
-  padding: 20px 50px;
+/*BACKGROUNDS*/
+/* line 299, ../scss/modules/_sections.scss */
+.banner {
+  text-align: center;
+  display: block;
+  max-width: 485px;
+  margin: 30px auto;
+}
+/* line 305, ../scss/modules/_sections.scss */
+.banner h2 {
+  font-weight: lighter;
+  margin-top: 0;
+}
+/* line 310, ../scss/modules/_sections.scss */
+.banner p {
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+/* line 315, ../scss/modules/_sections.scss */
+.banner span {
+  text-transform: uppercase;
+  margin: 0;
 }
 
-/* line 252, ../scss/modules/_sections.scss */
-.continue {
-  float: right;
-  padding: 20px 50px;
+/* line 321, ../scss/modules/_sections.scss */
+.background, .larceny-banner {
+  height: 240px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+}
+
+/* line 329, ../scss/modules/_sections.scss */
+.larceny-banner {
+  background-image: url("../img/larceny-banner.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
 }
 
  /*

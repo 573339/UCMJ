@@ -424,6 +424,10 @@
 }
 .fa-chevron-left:before {
   content: "\f053";
+  color:#007aff;
+  font-size:20px;
+  padding:8px;
+  font-weight: lighter;
 }
 .fa-chevron-right:before {
   content: "\f054";
@@ -439,6 +443,9 @@
 }
 .fa-check-circle:before {
   content: "\f058";
+  color:#2dcc70;
+  margin-right:5px;
+  font-size:16px;
 }
 .fa-question-circle:before {
   content: "\f059";
@@ -907,9 +914,14 @@
 }
 .fa-angle-left:before {
   content: "\f104";
+  color:#fff;
+  font-size:16px;
+  padding-right:8px;
 }
 .fa-angle-right:before {
   content: "\f105";
+  color:$white-color;
+  padding-left:8px;
 }
 .fa-angle-up:before {
   content: "\f106";
@@ -1593,6 +1605,8 @@
 }
 .fa-newspaper-o:before {
   content: "\f1ea";
+  font-weight: bold;
+  padding-left:10px;
 }
 .fa-wifi:before {
   content: "\f1eb";

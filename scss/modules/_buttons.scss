@@ -4,8 +4,71 @@
 
 .btn-default {
     color: $white-color;
-    background-color: $blue-color;
+    background-color:$blue-color;
     border:none;
-    border-radius:0px;
+    border-radius:4px;
 
 }
+
+.btn-primary {
+	background-color:$white-color;
+	color:$blue-color;
+	border:none;
+	padding:10px;
+}
+
+.btn-primary:hover {
+	background-color:$blue-color;
+	color:$white-color;
+}
+
+.btn-link {
+	background-color:$dark-gray;
+	color:$white-color;
+	text-decoration:none;
+}
+
+.btn-link:hover {
+	background-color:$grey-color;
+	color:$white-color;
+	text-decoration:none;
+}
+
+.btn-success {
+	color: $white-color;
+    background-color:$blue-color;
+    border-radius:0px;
+    text-decoration:none;
+    border-color: $blue-color;
+}
+
+.btn-success:hover {
+	background-color:$blue-color;
+	color:$white-color;
+	text-decoration:none;
+}
+
+
+.redo {
+	float:right;
+	display:block;
+	margin:15px;
+	padding:5px 15px;
+}
+
+.grid {
+	padding-right:0;
+}
+
+.back {
+    float: left;
+    padding: 20px 40px;
+  
+}
+
+.continue {
+    float: right;
+    padding: 20px 40px;
+  
+}
+

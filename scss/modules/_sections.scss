@@ -42,6 +42,12 @@ hr {
     margin:0 auto;
 }
 
+#splash-title a {
+    text-decoration: none;
+    padding: 20px 40px;
+    font-size: 18px;
+}
+
 /*UCMJ Drawer*/
 
 #draw-header {
@@ -84,6 +90,10 @@ hr {
 
 /*Tiles*/
 
+#grid > .grid:last-child {
+  padding-right:15px;
+}
+
 .tile {
   background-repeat:no-repeat;
   min-height:200px;
@@ -102,6 +112,12 @@ hr {
   padding:20px;
   min-height:166px;
 
+  h2 {
+  font-size:20px;
+  font-weight:lighter;
+  margin-top:5px;
+  }
+
   h3 {
   margin-top:5px;
   font-size:18px;
@@ -110,6 +126,10 @@ hr {
   span {
   font-weight:lighter;
   font-size:10px;
+  }
+
+  p {
+  font-size:12px;
   }
 }
 
@@ -190,6 +210,40 @@ hr {
 }
 
 
+/*SCENARIO TILES*/
+
+.scenario-tile {
+  background-repeat:no-repeat;
+  min-height:232px;
+  display:block;
+  color:$white-color;
+  margin-bottom: 30px;
+}
+
+.larcenyA {
+@extend .scenario-tile;
+background:url(../img/larceny-thumb1.jpg);
+  
+}
+
+.larcenyB {
+@extend .scenario-tile;
+background:url(../img/larceny-thumb2.jpg);
+  
+}
+
+.larcenyC {
+@extend .scenario-tile;
+background:url(../img/larceny-thumb3.jpg);
+  
+}
+
+.larcenyD {
+@extend .scenario-tile;
+background:url(../img/larceny-thumb4.jpg);
+  
+}
+
 /*SCENARIOS*/
 
 .scenario {
@@ -218,10 +272,6 @@ hr {
 }
 
 .article {
-  display:inline-block;
-  text-align:center;
-  width:auto;
-  padding:0 27px;
 
   p {
   font-size: 12px;
@@ -243,15 +293,44 @@ hr {
   float:none;
 }
 
-.back {
-    float: left;
-    padding: 20px 50px;
-  
+
+/*BACKGROUNDS*/
+
+.banner {
+  text-align:center;
+  display:block;
+  max-width:485px;
+  margin:30px auto;
+
+  h2 {
+  font-weight:lighter;
+  margin-top:0;
+  }
+
+  p {
+  font-size:11px;
+  margin-bottom:20px;
+  }
+
+  span {
+  text-transform:uppercase;
+  margin:0;
+  }
 }
 
-.continue {
-    float: right;
-    padding: 20px 50px;
+.background {
+  height:240px;
+  width:100%;
+  text-align:center;
+  color:$white-color;
+  font-weight:lighter;
+}
+
+.larceny-banner {
+@extend .background;
+background-image: url("../img/larceny-banner.jpg");
+background-repeat:no-repeat;
+margin-bottom:20px;
   
 }
 
