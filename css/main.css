@@ -1569,6 +1569,52 @@ a:focus {
   list-style-type: decimal;
 }
 
+/* QUESTIONS */
+/* line 696, ../scss/modules/_components.scss */
+.questions {
+  width: 280px;
+  margin-top: 150px;
+}
+
+/* line 702, ../scss/modules/_components.scss */
+.qa-wrap h4 {
+  font-weight: bold;
+  color: #50565b;
+}
+/* line 708, ../scss/modules/_components.scss */
+.qa-wrap p {
+  color: #50565b;
+  margin: 5px 0 0 0;
+}
+
+/* line 714, ../scss/modules/_components.scss */
+.qa-body {
+  padding: 0;
+}
+
+/* line 718, ../scss/modules/_components.scss */
+.btn-qa {
+  padding: 18px 24px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+/* line 725, ../scss/modules/_components.scss */
+.qa-btn {
+  background-color: white;
+  color: #007aff;
+  text-decoration: none;
+  border-bottom: 1px solid #cacfd4;
+}
+
+/* line 732, ../scss/modules/_components.scss */
+.qa-btn:hover {
+  background-color: #007aff;
+  color: white;
+  text-decoration: none;
+}
+
 /* LAYOUTS- Page Layout Styles*/
 /* Navigation */
 /* line 3, ../scss/layouts/_nav.scss */

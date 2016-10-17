@@ -691,9 +691,49 @@ h2 {
 }
 
 
+/* QUESTIONS */
 
+.questions {
+	width:280px;
+	margin-top:150px;
+}
 
+.qa-wrap {
+	h4 {
+		font-weight:bold;
+		color:$dark-gray;
 
+	}
+
+	p {
+	color:$dark-gray;
+	margin:5px 0 0 0;
+	}
+}
+
+.qa-body {
+	padding:0;
+}
+
+.btn-qa {
+	padding: 18px 24px;
+	width:100%;
+	display:block;
+	text-align:center;
+}
+
+.qa-btn {
+	background-color: $white-color;
+    color: $blue-color;
+    text-decoration: none;
+    border-bottom:1px solid #cacfd4;
+}
+
+.qa-btn:hover {
+	background-color: $blue-color;
+    color: $white-color;
+    text-decoration: none;
+}
 
 
 
