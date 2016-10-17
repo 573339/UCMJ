@@ -440,6 +440,8 @@
 }
 .fa-times-circle:before {
   content: "\f057";
+  color:#e74c3c;
+  padding-right:5px;
 }
 .fa-check-circle:before {
   content: "\f058";

@@ -735,7 +735,17 @@ h2 {
     text-decoration: none;
 }
 
+.incorrect h4 {
+	color:$red-color;
+}
 
+.correct h4 {
+	color:$green-color;
+}
+
+.answer h4 {
+	font-weight:bold;
+}
 
 
 

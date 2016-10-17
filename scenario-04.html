@@ -90,24 +90,71 @@
 <!--PROGRESS BAR--> 
 
 <!-- LARCENY MODAL ONE -->
-      <div id="lacerny-qa" class="modal fade" role="dialog">
-        <div class="modal-dialog questions">
+<div id="lacerny-qa" class="modal fade" role="dialog">
+  <div class="modal-dialog questions">
 
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header qa-wrap">
-              <h4 class="modal-title text-center"><i class="fa fa-question-circle" aria-hidden="true"></i>What do you do?</h4>
-              <p>Upon closer inspection, you clearly see a wallet inside.</p>
-            </div>
-            <div class="modal-body qa-body">
-              <a href="#" class="btn-qa qa-btn">Close the Locker</a>
-              <a href="#" class="btn-qa qa-btn">Report the issue to a superior</a>
-              <a href="#" class="btn-qa qa-btn">Take the unattended valuables</a>
-            </div>
-          
-          </div>
-        </div>
-      </div><!-- LARCENY  MODAL ONE -->
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header qa-wrap">
+        <h4 class="modal-title text-center"><i class="fa fa-question-circle" aria-hidden="true"></i>What do you do?</h4>
+        <p>Upon closer inspection, you clearly see a wallet inside.</p>
+      </div>
+      <div class="modal-body qa-body">
+        <a href="#" data-toggle="modal" data-target="#lacerny-incorrect" class="btn-qa qa-btn">Close the Locker</a>
+        <a href="#" data-toggle="modal" data-target="#lacerny-correct" class="btn-qa qa-btn">Report the issue to a superior</a>
+        <a href="#" data-toggle="modal" data-target="#lacerny-incorrect" class="btn-qa qa-btn">Take the unattended valuables</a>
+      </div>
+
+    </div>
+  </div>
+</div><!-- LARCENY  MODAL ONE -->
+
+<!-- LARCENY INCORRECT MODAL ONE -->
+<div id="lacerny-incorrect" class="modal fade" role="dialog">
+  <div class="modal-dialog questions">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header qa-wrap incorrect">
+        <h4 class="modal-title text-center"><i class="fa fa-times-circle" aria-hidden="true"></i>Incorrect</h4>
+      </div>
+      <div class="modal-body answer">
+        <h4>Close the Locker</h4>
+        <p>Any interaction with property that is not your own could be misconstrued.</p>
+        <p>Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal, property, or article of value of any kind is a punishable offense.</p>
+      </div>
+
+      <div class="row"> 
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-right:0;">
+         <a href="#" data-toggle="modal" data-target="#lacerny-qa" class="btn-qa btn-link">Try Again</a>
+       </div>
+
+       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-left:0;">
+        <a href="scenario-01.html" class="btn-qa btn-success">View Article</a>
+       </div>
+     </div>
+   </div>
+ </div>
+</div><!-- LARCENY  INCORRECT MODAL ONE -->
+
+<!-- LARCENY CORRECT MODAL ONE -->
+<div id="lacerny-correct" class="modal fade" role="dialog">
+  <div class="modal-dialog questions">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header qa-wrap correct">
+        <h4 class="modal-title text-center"><i class="fa fa-check-circle" aria-hidden="true"></i>Correct</h4>
+      </div>
+      <div class="modal-body answer">
+        <h4>Report the issue to a superior</h4>
+        <p>Any interaction with property that is not your own could be misconstrued.</p>
+        <p>Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal, property, or article of value of any kind is a punishable offense.</p>
+      </div>
+      <a href="larceny.html" class="btn-qa btn-success">Continue</a>
+    </div>
+  </div>
+</div><!-- LARCENY CORRECT MODAL ONE -->
 
 
 </body>

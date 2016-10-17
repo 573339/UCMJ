@@ -1615,6 +1615,21 @@ a:focus {
   text-decoration: none;
 }
 
+/* line 738, ../scss/modules/_components.scss */
+.incorrect h4 {
+  color: #e74c3c;
+}
+
+/* line 742, ../scss/modules/_components.scss */
+.correct h4 {
+  color: #2dcc70;
+}
+
+/* line 746, ../scss/modules/_components.scss */
+.answer h4 {
+  font-weight: bold;
+}
+
 /* LAYOUTS- Page Layout Styles*/
 /* Navigation */
 /* line 3, ../scss/layouts/_nav.scss */
