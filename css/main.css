@@ -1609,7 +1609,7 @@ a:focus {
 }
 
 /* line 732, ../scss/modules/_components.scss */
-.qa-btn:hover {
+.qa-btn:hover, .qa-btn:focus {
   background-color: #007aff;
   color: white;
   text-decoration: none;

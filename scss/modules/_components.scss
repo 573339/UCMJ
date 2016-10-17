@@ -729,7 +729,7 @@ h2 {
     border-bottom:1px solid #cacfd4;
 }
 
-.qa-btn:hover {
+.qa-btn:hover, .qa-btn:focus {
 	background-color: $blue-color;
     color: $white-color;
     text-decoration: none;
