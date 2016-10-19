@@ -16,7 +16,13 @@
     <author href="http://www.boozallen.com" email="cronin_jonathan@bah.com">
         NETC - Naval Education Training Command
     </author>
+    
+    <gap:plugin name="cordova-plugin-statusbar" source="npm" version="2.2.0" />
 
+    <key>UIStatusBarHidden</key>
+    <true/>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
 
     <preference name="permissions" value="none" />
     <preference name="fullscreen" value="true" />
