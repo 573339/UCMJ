@@ -29,8 +29,8 @@
     <preference name="orientation" value="landscape" />
 
     <platform name="ios" />
-        <preference name="target-device" value="tablet" />
-    </platform>
+    <preference name="target-device" value="tablet" />
+
 
 
     
