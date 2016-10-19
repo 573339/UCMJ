@@ -17,11 +17,6 @@
         NETC - Naval Education Training Command
     </author>
 
-    <plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
-
-
-    <access origin="*"/>
-    <allow-navigation href="*" />
 
     <preference name="permissions" value="none" />
     <preference name="fullscreen" value="true" />
