@@ -1,244 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>UCMJ</title>
-<meta charset="utf-8">
-<!--Meta Tag-->
-<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="HandheldFriendly" content="True">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<!--Meta Tag-->
+	<head>
+		<title>UCMJ</title>
+		<meta charset="utf-8">
+		<!--Meta Tag-->
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--Meta Tag-->
+		
+		<!--Bootstrap-->	
+		<link rel="stylesheet" href="css/bootstrap.css" />
 
-<script type="text/javascript" src="js/jquery.js"></script>
+		<!-- Typography-->
+		<link href="css/font-awesome.css" rel="stylesheet"/>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700,600,400,300,300italic,700italic' rel='stylesheet' type='text/css'/>
 
-<!--Bootstrap-->
-<link rel="stylesheet" href="css/bootstrap.css" />
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<!--Bootstrap-->
 
-<!--CSS-->
-<link rel="stylesheet" type="text/css" media="all" href="css/main.css" />
-<script type="text/javascript" src="js/webslidemenu.js"></script>
-<!--CSS-->
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" media="all" href="css/main.css" />
 
-<!-- Typography-->
-<link href="css/font-awesome.css" rel="stylesheet"/>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700,600,400,300,300italic,700italic' rel='stylesheet' type='text/css'/>
-<!-- Typography-->
+	</head>
+	<body>
+		<div class="wsmenucontainer clearfix">
+			<div class="overlapblackbg"></div>
+			<div class="container-fluid header">
+				<div class="wrapper clearfix">
+					<div class="row">
+						<div class="col-md-4"> <a id="wsnavtoggle" class="animated-arrow"><span></span></a></div>
+						<div class="col-md-4">
+							<h3 class="title">Primer</h3>
+						</div>
+						<div class="col-md-4 view">
+							<h3 Class="view"><a href="#">View All Articles<i class="fa fa-newspaper-o" aria-hidden="true"></i></a></h3>
+						</div>
+					</div>
+				</div>
+				<!--UCMJ DRAWER-->
+				<nav class="wsmenu clearfix drawer">
+					<div class id="draw-header">
+						<img src="img/netc-logo.png" width="40" height="40">
+						<h5>Primer Articles</h5>
+					</div>
+					<h3>About</h3>
+					<i>Article Activities</i>
+					<ul class="mobile-sub wsmenu-list clearfix">
+						<li><span>886.ARTICLE 86</span><a href="#">Absence Without Leave</a></li>
+						<li><span>892.ARTICLE 92.</span><a href="#">Failure to Obey Order or Regulation</a></li>
+						<li><span>907.ARTICLE 107.</span><a href="#">False Statements</a></li>
+						<li><span>911.ARTICLE 111.</span><a href="#">Drunken or Reckless Driving</a></li>
+						<li><span>912a.ARTICLE 112a.</span><a href="#">Wrongful Use, Possession, Etc., of Controlled Substances</a></li>
+						<li><span>920.ARTICLE 120</span><a href="#">Rape and Carnal Knowledge</a></li>
+						<li><span>921.ARTICLE 121.</span><a href="#">Larceny and Wrongful Appropriation</a></li>
+						<li><span>928.ARTICLE 128</span><a href="#">Assault</a></li>
+					</ul>
+				</nav>
+				<!--UCMJ DRAWER-->
+			</div>
+			<!--end of header-->
+			<!--NAVIGATION HEADER-->
+			<div class="container-fluid nav-header">
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="nav nav-pills">
+							<li role="presentation" class="active"><a href="#">All</a></li>
+							<li role="presentation"><a href="#">Complete</a></li>
+							<li role="presentation"><a href="#">Underway</a></li>
+							<li role="presentation"><a href="#">Incomplete</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 col-md-offset-2"><input type="text" class="form-control" placeholder="Search"></div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row" id="articles-library">
 
-</head>
-<body>
-<div class="wsmenucontainer clearfix">
-<div class="overlapblackbg"></div>
-  
-
-  
-  
-  <div class="container-fluid header">
-    <div class="wrapper clearfix">
-      <div class="row">
-    	  <div class="col-md-4"> <a id="wsnavtoggle" class="animated-arrow"><span></span></a></div>
-        <div class="col-md-4"><h3 class="title">Primer</h3></div> 
-        <div class="col-md-4 view"><h3 Class="view"><a href="#">View All Articles<i class="fa fa-newspaper-o" aria-hidden="true"></i></a></h3></div>
-        </div>  
-        
-    </div>
-    
-    <!--UCMJ DRAWER-->
-    <nav class="wsmenu clearfix drawer">
-      <div class id="draw-header"><img src="img/netc-logo.png" width="40" height="40"><h5>Primer Articles</h5></div>
-      <h3>About</h3>
-      <i>Article Activities</i>
-      <ul class="mobile-sub wsmenu-list clearfix">
-        <li><span>886.ARTICLE 86</span><a href="#">Absence Without Leave</a></li>
-        <li><span>892.ARTICLE 92.</span><a href="#">Failure to Obey Order or Regulation</a></li>
-        <li><span>907.ARTICLE 107.</span><a href="#">False Statements</a></li>
-        <li><span>911.ARTICLE 111.</span><a href="#">Drunken or Reckless Driving</a></li>
-        <li><span>912a.ARTICLE 112a.</span><a href="#">Wrongful Use, Possession, Etc., of Controlled Substances</a></li>
-        <li><span>920.ARTICLE 120</span><a href="#">Rape and Carnal Knowledge</a></li>
-        <li><span>921.ARTICLE 121.</span><a href="#">Larceny and Wrongful Appropriation</a></li>
-        <li><span>928.ARTICLE 128</span><a href="#">Assault</a></li>
-      </ul>
-    </nav>
-    <!--UCMJ DRAWER-->
-    
-  </div><!--end of header-->
-
-   <!--NAVIGATION HEADER-->
-      <div class="container-fluid nav-header">
-      <div class="row">
-        <div class="col-md-6">
-          <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="#">All</a></li>
-            <li role="presentation"><a href="#">Complete</a></li>
-            <li role="presentation"><a href="#">Underway</a></li>
-             <li role="presentation"><a href="#">Incomplete</a></li>
-          </ul></div>
-        <div class="col-md-4 col-md-offset-2"><input type="text" class="form-control" placeholder="Search"></div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="ucmj text-center">
-            <div class="tile-content primer">
-              <h3>UCMJ Primer Articles</h3>
-              <a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#primer">View All</a>
-           </div>
-          </div>
-        </div>
-        <div class="col-md-4 tile-hover">
-          <a href="larceny.html">
-          <div class="absence green">
-             <div class="tile-content">
-              <span>886. ARTICLE 86.</span>
-              <h3>Absence Without Leave</h3>
-            </div>
-          <div class="status">
-          <p>3 of 3 Completed</p>
-          </div>
-        </div>
-       </a>
-        </div>
-        <div class="col-md-4 tile-hover">
-          <a href="larceny.html">
-          <div class="failure yellow">
-            <div class="tile-content">
-              <span>892. ARTICLE 92.</span>
-              <h3>Failure to Obey Order or Regulation</h3>
-            </div>
-            <div class="status">
-              <p>2 of 5 Completed</p>
-            </div>
-        </div>
-        </a>
-        </div>
-      </div>
-
-        <div class="row">
-        <div class="col-md-4 tile-hover">
-          <a href="larceny.html">
-          <div class="false green">
-             <div class="tile-content">
-              <span>907. ARTICLE 107. </span>
-              <h3>False Statements</h3>
-            </div>
-          <div class="status">
-          <p>5 of 5 Completed</p>
-          </div>
-        </div>
-        </a>
-        </div>
-        <div class="col-md-4 tile-hover">
-          <a href="larceny.html">
-          <div class="drunken yellow">
-             <div class="tile-content">
-              <span>911. ARTICLE 111. </span>
-              <h3>Drunken or Reckless Driving</h3>
-            </div>
-          <div class="status">
-          <p>2 of 3 Completed</p>
-          </div>
-        </div>
-        </a>
-        </div>
-        <div class="col-md-4 tile-hover">
-          <a href="larceny.html">
-          <div class="wrong red">
-            <div class="tile-content">
-              <span>912a. ARTICLE 112a.</span>
-              <h3>Wrongful Use, Possession, Etc., of Controlled Substances</h3>
-            </div>
-            <div class="status">
-              <p>1 of 5 Completed</p>
-            </div>
-        </div>
-        </a>
-        </div>
-      </div>
-
-          <div class="row">
-        <div class="col-md-4 tile-hover">
-          <a href="larceny.html">
-          <div class="rape red">
-             <div class="tile-content">
-              <span>920. ARTICLE 120.</span>
-              <h3>Rape and Carnal Knowledge</h3>
-            </div>
-          <div class="status">
-          <p>0 of 2 Completed</p>
-          </div>
-        </div>
-        </a>
-        </div>
-        <div class="col-md-4 tile-hover">
-          <a href="larceny.html">
-          <div class="larceny yellow">
-             <div class="tile-content">
-              <span>921. ARTICLE 121.</span>
-              <h3>Larceny and Wrongful Appropriation</h3>
-            </div>
-          <div class="status">
-          <p>2 of 4 Completed</p>
-          </div>
-        </div>
-        </a>
-        </div>
-        <div class="col-md-4 tile-hover">
-          <a href="larceny.html">
-          <div class="assault red">
-            <div class="tile-content">
-              <span>928. ARTICLE 128.</span>
-              <h3>Assault</h3>
-            </div>
-            <div class="status">
-              <p>0 of 5 Completed</p>
-            </div>
-        </div>
-        </a>
-        </div>
-      </div>
-    </div>
-
-                        <!-- NOTE MODAL ONE -->
-                        <div id="primer" class="modal fade" role="dialog">
-                          <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                              <div class="modal-header modal-bkgd">
-                                <h1>UCMJ Primer Articles</h1>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              </div>
-                              <div class="modal-body">
-                                <div class="modal-article">
-                                  <span>886. ARTICLE 86.</span>
-                                  <h2>Absence Without Leave</h2>
-                                  <p>Any member of the armed forces who, without authority:</p>
-                                  <ol class="primer-articles">
-                                    <li>Fails to go to his appointed place of duty at the time prescribed;</li>
-                                    <li>Goes from that place; or999</li>
-                                    <li>Absents himself or remains absent from his unit, organization, or place of duty at which he is required to be at the time prescribed; shall be punished as a court-martial may direct.</ol>
-                                  </ol>
-                                </div>
-
-                                   <div class="modal-article">
-                                  <span>892. ARTICLE 92.</span>
-                                  <h2>Failure to Obey Order or Regulation</h2>
-                                  <p>Any person subject to this chapter who:</p>
-                                  <ol class="primer-articles">
-                                    <li>Violates or fails to obey any lawful general order or regulation;</li>
-                                    <li>Having knowledge of any other lawful order issued by any member of the armed forces, which it is his    duty to obey, fails to obey the order; or</li>
-                                    <li>Is derelict in the performance of his duties; shall be punished as a court-martial may dire</ol>
-                                  </ol>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div><!-- NOTE END MODAL ONE -->
-</div>
-<script type="text/javascript" src="cordova.js"></script>
-</body>
+				</div>
+			</div>
+			<!-- NOTE MODAL ONE -->
+			<div id="primer" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header modal-bkgd">
+							<h1>UCMJ Primer Articles</h1>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<div class="modal-article">
+								<span>886. ARTICLE 86.</span>
+								<h2>Absence Without Leave</h2>
+								<p>Any member of the armed forces who, without authority:</p>
+								<ol class="primer-articles">
+									<li>Fails to go to his appointed place of duty at the time prescribed;</li>
+									<li>Goes from that place; or999</li>
+									<li>Absents himself or remains absent from his unit, organization, or place of duty at which he is required to be at the time prescribed; shall be punished as a court-martial may direct.
+								</ol>
+								</ol>
+							</div>
+							<div class="modal-article">
+								<span>892. ARTICLE 92.</span>
+								<h2>Failure to Obey Order or Regulation</h2>
+								<p>Any person subject to this chapter who:</p>
+								<ol class="primer-articles">
+									<li>Violates or fails to obey any lawful general order or regulation;</li>
+									<li>Having knowledge of any other lawful order issued by any member of the armed forces, which it is his    duty to obey, fails to obey the order; or</li>
+									<li>Is derelict in the performance of his duties; shall be punished as a court-martial may dire</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- NOTE END MODAL ONE -->
+		</div>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/webslidemenu.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
 </html>
