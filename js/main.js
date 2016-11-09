@@ -37,11 +37,11 @@ var articles=[
 					"description": "Upon closer inspection, you clearly see a wallet inside",
 					"options":[
 						{
-							"text": "Close the locker"
+							"text": "Close the locker",
+							"correct": true
 						},
 						{
-							"text": "Report the isue to a superior",
-							"correct": true
+							"text": "Report the isue to a superior"
 						},
 						{
 							"text": "Take the unattended valuables"
