@@ -60,15 +60,35 @@
 	padding-right:0;
 }
 
+.btn-screen-nav{
+	position:absolute;
+	height: 100%;
+	border-radius:0;
+	width: 140px;
+}
+
 .back {
-    float: left;
-    padding: 20px 40px;
+    left:0;
+    top:0;
   
 }
 
 .continue {
-    float: right;
-    padding: 20px 40px;
-  
+    right:0;
+    top:0;  
 }
 
+
+.btn-top{
+	margin-top: 8px;
+	height: 30px;
+	display:inline-block;
+	
+	line-height: 30px;
+	font-family: 'Open Sans',sans-serif;
+
+	.fa{
+		line-height: 30px;
+		vertical-align:middle;
+	}
+}

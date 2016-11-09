@@ -23,43 +23,25 @@
 
 	</head>
 	<body>
-		<div class="wsmenucontainer clearfix">
-			<div class="overlapblackbg"></div>
+
+		<nav>
 			<div class="container-fluid header">
-				<div class="wrapper clearfix">
-					<div class="row">
-						<div class="col-md-4"> <a id="wsnavtoggle" class="animated-arrow"><span></span></a></div>
-						<div class="col-md-4">
-							<h3 class="title">Primer</h3>
-						</div>
-						<div class="col-md-4 view">
-							<h3 Class="view"><a href="#">View All Articles<i class="fa fa-newspaper-o" aria-hidden="true"></i></a></h3>
-						</div>
+				<div class="row">
+					<div class="col-xs-4">
+						<a href="#" id="btn-articles-back" class="btn-top screen-article" style="display:none;"><span class="fa fa-chevron-left"></span>Back</a>
+						<a href="#" id="btn-article-back" class="btn-top screen-scenario" style="display:none;"><span class="fa fa-chevron-left"></span>Back</a>
+					</div>
+					<div class="col-xs-4">
+						<h3 class="title">Primer</h3>
+					</div>
+					<div class="col-xs-4 view">
+						<!-- <h3 Class="view"><a href="#">View All Articles<i class="fa fa-newspaper-o" aria-hidden="true"></i></a></h3> -->
 					</div>
 				</div>
-				<!--UCMJ DRAWER-->
-				<nav class="wsmenu clearfix drawer">
-					<div class id="draw-header">
-						<img src="img/netc-logo.png" width="40" height="40">
-						<h5>Primer Articles</h5>
-					</div>
-					<h3>About</h3>
-					<i>Article Activities</i>
-					<ul class="mobile-sub wsmenu-list clearfix">
-						<li><span>886.ARTICLE 86</span><a href="#">Absence Without Leave</a></li>
-						<li><span>892.ARTICLE 92.</span><a href="#">Failure to Obey Order or Regulation</a></li>
-						<li><span>907.ARTICLE 107.</span><a href="#">False Statements</a></li>
-						<li><span>911.ARTICLE 111.</span><a href="#">Drunken or Reckless Driving</a></li>
-						<li><span>912a.ARTICLE 112a.</span><a href="#">Wrongful Use, Possession, Etc., of Controlled Substances</a></li>
-						<li><span>920.ARTICLE 120</span><a href="#">Rape and Carnal Knowledge</a></li>
-						<li><span>921.ARTICLE 121.</span><a href="#">Larceny and Wrongful Appropriation</a></li>
-						<li><span>928.ARTICLE 128</span><a href="#">Assault</a></li>
-					</ul>
-				</nav>
-				<!--UCMJ DRAWER-->
 			</div>
-			<!--end of header-->
-			<!--NAVIGATION HEADER-->
+		</nav>
+
+		<div id="articles" style="display:block;" class="screen screen-articles">
 			<div class="container-fluid nav-header">
 				<div class="row">
 					<div class="col-md-6">
@@ -78,43 +60,144 @@
 
 				</div>
 			</div>
-			<!-- NOTE MODAL ONE -->
-			<div id="primer" class="modal fade" role="dialog">
-				<div class="modal-dialog">
-					<!-- Modal content-->
-					<div class="modal-content">
-						<div class="modal-header modal-bkgd">
-							<h1>UCMJ Primer Articles</h1>
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+
+		<div id="article" style="display:none;" class="screen screen-article">
+			<div class="container-fluid larceny-banner">
+				<div class="row">
+					<div class="banner">
+						<span id="article-article">921. Article 121.</span>
+						<h2 id="article-title">Larceny and Wrongful Appropriation</h2>
+						<p id="article-description">Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.</p>
+						<a href="#" class="btn btn-primary">Read Article</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row article-scenarios" id="grid">
+					
+				</div>
+			</div>
+
+		</div>
+		
+		<div id="scenario" class="screen screen-scenario" style="display:none;">
+			<!--UCMJ SCENARIO-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 scenario">
+						<img src="" id="scenario-screen-image">
+						<div class="box">
+							<h4 id="scenario-screen-text"></h4>
 						</div>
-						<div class="modal-body">
-							<div class="modal-article">
-								<span>886. ARTICLE 86.</span>
-								<h2>Absence Without Leave</h2>
-								<p>Any member of the armed forces who, without authority:</p>
-								<ol class="primer-articles">
-									<li>Fails to go to his appointed place of duty at the time prescribed;</li>
-									<li>Goes from that place; or999</li>
-									<li>Absents himself or remains absent from his unit, organization, or place of duty at which he is required to be at the time prescribed; shall be punished as a court-martial may direct.
-								</ol>
-								</ol>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bar">
+						<div class="article">
+							<p><strong id="scenario-article-article"></strong> <span id="scenario-article-title"></span>: <strong id="scenario-title"></strong></p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width:0%">
+								</div>
 							</div>
-							<div class="modal-article">
-								<span>892. ARTICLE 92.</span>
-								<h2>Failure to Obey Order or Regulation</h2>
-								<p>Any person subject to this chapter who:</p>
-								<ol class="primer-articles">
-									<li>Violates or fails to obey any lawful general order or regulation;</li>
-									<li>Having knowledge of any other lawful order issued by any member of the armed forces, which it is his    duty to obey, fails to obey the order; or</li>
-									<li>Is derelict in the performance of his duties; shall be punished as a court-martial may dire</li>
-								</ol>
-							</div>
+						</div>
+						<button type="button" id="scenario-back" class="btn btn-default back btn-screen-nav">Back</button>
+						<button type="button" id="scenario-next" class="btn btn-default continue btn-screen-nav">Continue</button>
+					</div>
+				</div>
+			</div>
+			<!--UCMJ SCENARIO--> 
+
+
+			<!--PROGRESS BAR--> 
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					</div>
+				</div>
+			</div>
+			<!--PROGRESS BAR--> 
+		</div>
+
+
+
+
+		<div class="modal fade" id="testModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<p class="test-question"></p>
+					</div>
+					<div class="modal-footer">
+						
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<div class="modal fade" id="responseModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h5 class="modal-subtitle"></h5>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<p class="test-response"></p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-primary btn-block btn-test-tryagain">Try Again</a>
+						<a href="#" class="btn btn-secondary btn-block btn-test-toarticle">View Article</a>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+
+		<!-- NOTE MODAL ONE -->
+		<div id="primer" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header modal-bkgd">
+						<h1>UCMJ Primer Articles</h1>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="modal-article">
+							<span>886. ARTICLE 86.</span>
+							<h2>Absence Without Leave</h2>
+							<p>Any member of the armed forces who, without authority:</p>
+							<ol class="primer-articles">
+								<li>Fails to go to his appointed place of duty at the time prescribed;</li>
+								<li>Goes from that place; or999</li>
+								<li>Absents himself or remains absent from his unit, organization, or place of duty at which he is required to be at the time prescribed; shall be punished as a court-martial may direct.
+							</ol>
+							</ol>
+						</div>
+						<div class="modal-article">
+							<span>892. ARTICLE 92.</span>
+							<h2>Failure to Obey Order or Regulation</h2>
+							<p>Any person subject to this chapter who:</p>
+							<ol class="primer-articles">
+								<li>Violates or fails to obey any lawful general order or regulation;</li>
+								<li>Having knowledge of any other lawful order issued by any member of the armed forces, which it is his    duty to obey, fails to obey the order; or</li>
+								<li>Is derelict in the performance of his duties; shall be punished as a court-martial may dire</li>
+							</ol>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- NOTE END MODAL ONE -->
 		</div>
+		<!-- NOTE END MODAL ONE -->
+
 		<script type="text/javascript" src="cordova.js"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>

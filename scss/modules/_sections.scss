@@ -251,9 +251,11 @@ background:url(../img/larceny-thumb4.jpg);
 }
 
 .bar {
+  position:fixed;
+  bottom:0;
   padding:0;
   background:$white-color;
-  max-height:65px;
+  height:65px;
 }
 
 .box {
@@ -291,6 +293,7 @@ background:url(../img/larceny-thumb4.jpg);
 
 .progress-bar {
   float:none;
+  transition: .3s ease-out width;
 }
 
 
@@ -332,6 +335,52 @@ background-image: url("../img/larceny-banner.jpg");
 background-repeat:no-repeat;
 margin-bottom:20px;
   
+}
+
+#testModal,#responseModal{
+  text-align:center;
+
+  .modal-dialog{
+    margin-top:60px;
+    width: 350px;
+  }
+
+  .modal-content{
+    border-radius:6px;
+  }
+
+  .modal-subtitle{
+    display:inline-block;
+    text-align:center;
+    padding: 8px 12px;
+    border-radius:100%;
+    background-color: green;
+    color:white;
+    font-size: 12px;
+    border-radius: 30px;
+    text-transform:uppercase;
+
+    &.incorrect{
+      background-color:red;
+    }
+  }
+
+
+  .btn {
+    
+    border-radius: 0;
+    padding: 16px;
+  }
+
+  .btn-primary{
+    color: white;
+    background-color: #007aff;
+  }
+
+  .btn-secondary{
+    color: #717171;
+    background-color: #dcdcdc;
+  }
 }
 
 
