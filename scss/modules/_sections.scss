@@ -340,6 +340,12 @@ margin-bottom:20px;
 #testModal,#responseModal{
   text-align:center;
 
+  .modal-header .close{
+    position: absolute;
+    right: 10px;
+    top: -40px;
+  }
+
   .modal-dialog{
     margin-top:60px;
     width: 350px;

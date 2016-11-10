@@ -332,6 +332,10 @@ hr {
 
 #testModal, #responseModal {
   text-align: center; }
+  #testModal .modal-header .close, #responseModal .modal-header .close {
+    position: absolute;
+    right: 10px;
+    top: -40px; }
   #testModal .modal-dialog, #responseModal .modal-dialog {
     margin-top: 60px;
     width: 350px; }

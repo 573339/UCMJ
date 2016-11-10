@@ -7,7 +7,7 @@ var articles=[
 		"id": 0,
 		"article": "921.ARTICLE 121",
 		"title": "Larceny and Wrongful Appropriation",
-		"description": "eeeAliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
 		"scenarios":[
 			{
