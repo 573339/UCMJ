@@ -9,6 +9,8 @@ var articles=[
 		"title": "Larceny and Wrongful Appropriation",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
+		"libraryImage": "larceny-article.jpg",
+		"progress": "complete",
 		"scenarios":[
 			{
 				"id": 0,
@@ -37,23 +39,33 @@ var articles=[
 					"description": "Upon closer inspection, you clearly see a wallet inside",
 					"options":[
 						{
-							"text": "Close the locker",
-							"correct": true
+							"text": "Close the locker"
 						},
 						{
-							"text": "Report the isue to a superior"
+							"text": "Report the issue to a superior",
+							"correct": true
 						},
 						{
 							"text": "Take the unattended valuables"
 						}
 					],
 					"response":{
-						"title": "Close the Locker",
+						"title": "Report the issue to a superior",
 						"description": "Any interaction with property that is not your own could be misconstrued. Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal, property, or article of value of any kind is a punishable offense."
 					}
 				}
 			}
 		]
+	},
+	{
+		"id": 1,
+		"article": "921.ARTICLE 121",
+		"title": "Larceny and Wrongful Appropriation",
+		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"image": "larceny.jpg",
+		"libraryImage": "larceny-article.jpg",
+		"progress": "complete",
+		"scenarios":[]
 	}
 ];
 
@@ -84,9 +96,9 @@ $(document).ready(function(){
 
 	//populates article library
 	$.each(articles, function(){
-		var newArticle=$('<div class="col-md-4 tile-hover">'+
+		var newArticle=$('<div class="col-md-4 tile-hover article-tile">'+
 				'<a href="'+this.id+'">'+
-					'<div class="absence green">'+
+					'<div class="absence progress-'+this.progress+'" style="background-image: url(img/'+this.libraryImage+'">'+
 						'<div class="tile-content">'+
 							'<span>'+this.article+'</span>'+
 							'<h3>'+this.title+'</h3>'+
@@ -99,6 +111,28 @@ $(document).ready(function(){
 			'</div>');
 
 		newArticle.appendTo('#articles-library');
+	});
+
+	//init isotope
+	var $isotope=$('#articles-library').isotope({
+		// options
+		itemSelector: '.article-tile',
+		layoutMode: 'fitRows'
+	});
+
+	//when progress filter changes
+	$('#articles-progress-filter a').click(function(){
+		$('#articles-progress-filter li').removeClass('active');
+		$(this).parent().addClass('active');
+		var filterClass = '*';
+		
+		if($(this).attr('data-progress')!=='all'){
+			filterClass='.progress-'+$(this).attr('data-progress');
+		}
+		
+		$isotope.isotope({filter: filterClass});
+
+		return false;
 	});
 
 	//makes article links active

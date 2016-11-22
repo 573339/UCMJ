@@ -196,16 +196,16 @@ hr {
   background:url(../img/assault-article.jpg); 
 }
 
-.green {
+.green, .progress-complete {
   border-top:4px solid $green-color;
 }
 
-.red{
+.red, .progress-new{
   border-top:4px solid $red-color;
 }
 
 
-.yellow {
+.yellow, .progress-underway {
   border-top:4px solid $yellow-color;
 }
 

@@ -233,13 +233,13 @@ hr {
 .assault {
   background: url(../img/assault-article.jpg); }
 
-.green {
+.green, .progress-complete {
   border-top: 4px solid #2dcc70; }
 
-.red {
+.red, .progress-new {
   border-top: 4px solid #e74c3c; }
 
-.yellow {
+.yellow, .progress-underway {
   border-top: 4px solid #f5be27; }
 
 /*SCENARIO TILES*/
