@@ -1219,7 +1219,8 @@ a:focus {
 /* Navigation */
 .nav-pills {
   border: 1px solid #007aff;
-  width: 449px; }
+  width: auto;
+  float: left; }
   .nav-pills li {
     border-right: 1px solid #007aff; }
 

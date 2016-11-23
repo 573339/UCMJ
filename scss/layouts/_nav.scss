@@ -2,7 +2,8 @@
 
 .nav-pills {
 	border:1px solid $blue-color;
-	width:449px;
+	width:auto;
+	float:left;
 
 	li {
 	border-right: 1px solid $blue-color;
