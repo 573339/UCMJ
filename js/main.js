@@ -1,3 +1,11 @@
+//PLUGIN::containsIN
+$.extend($.expr[":"], {
+	"containsIN": function(elem, i, match, array) {
+	return (elem.textContent || elem.innerText || "").toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
+}
+});
+
+
 var currentArticle,
 	currentScenario,
 	currentScenarioScreen;
@@ -5,7 +13,7 @@ var currentArticle,
 var articles=[
 	{
 		"id": 0,
-		"article": "921.ARTICLE 121",
+		"article": "921.ARTICLE 121.",
 		"title": "Larceny and Wrongful Appropriation",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
@@ -59,12 +67,72 @@ var articles=[
 	},
 	{
 		"id": 1,
-		"article": "921.ARTICLE 121",
-		"title": "Larceny and Wrongful Appropriation",
+		"article": "886. ARTICLE 86.",
+		"title": "Absence Without Leave",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
-		"libraryImage": "larceny-article.jpg",
-		"progress": "complete",
+		"libraryImage": "absence-article.jpg",
+		"progress": "underway",
+		"scenarios":[]
+	},
+	{
+		"id": 2,
+		"article": "892. ARTICLE 92.",
+		"title": "Failure to Obey Order or Regulation",
+		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"image": "larceny.jpg",
+		"libraryImage": "failure-article.jpg",
+		"progress": "new",
+		"scenarios":[]
+	},
+	{
+		"id": 3,
+		"article": "907. ARTICLE 107.",
+		"title": "False Statements",
+		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"image": "larceny.jpg",
+		"libraryImage": "false-article.jpg",
+		"progress": "underway",
+		"scenarios":[]
+	},
+	{
+		"id": 4,
+		"article": "911. ARTICLE 111.",
+		"title": "Drunken or Reckless Driving",
+		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"image": "larceny.jpg",
+		"libraryImage": "drunken-article.jpg",
+		"progress": "new",
+		"scenarios":[]
+	},
+	{
+		"id": 5,
+		"article": "912a. ARTICLE 112a.",
+		"title": "Wrongful Use, Possession, Etc., of Controlled Substances",
+		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"image": "larceny.jpg",
+		"libraryImage": "wrongful-article.jpg",
+		"progress": "underway",
+		"scenarios":[]
+	},
+	{
+		"id": 6,
+		"article": "920. ARTICLE 120.",
+		"title": "Rape and Carnal Knowledge",
+		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"image": "larceny.jpg",
+		"libraryImage": "rape-article.jpg",
+		"progress": "underway",
+		"scenarios":[]
+	},
+	{
+		"id": 7,
+		"article": "928. ARTICLE 128.",
+		"title": "Assault",
+		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"image": "larceny.jpg",
+		"libraryImage": "assault-article.jpg",
+		"progress": "underway",
 		"scenarios":[]
 	}
 ];
@@ -96,9 +164,9 @@ $(document).ready(function(){
 
 	//populates article library
 	$.each(articles, function(){
-		var newArticle=$('<div class="col-md-4 tile-hover article-tile">'+
+		var newArticle=$('<div class="col-md-4 tile-hover article-tile progress-'+this.progress+'">'+
 				'<a href="'+this.id+'">'+
-					'<div class="absence progress-'+this.progress+'" style="background-image: url(img/'+this.libraryImage+'">'+
+					'<div class="absence " style="background-image: url(img/'+this.libraryImage+'">'+
 						'<div class="tile-content">'+
 							'<span>'+this.article+'</span>'+
 							'<h3>'+this.title+'</h3>'+
@@ -120,19 +188,58 @@ $(document).ready(function(){
 		layoutMode: 'fitRows'
 	});
 
+	//update filter function, search and progress
+	function updateFilter(){
+		
+		$isotope.isotope({filter: function(){
+
+			var selectedProgress=$('#articles-progress-filter li.active a').attr('data-progress');
+			var searchVal=$('#search-box').val();
+
+			if(selectedProgress!=='all' && !$(this).hasClass('progress-'+selectedProgress)){
+				return false;
+			}
+
+			if(searchVal && $(this).find('.tile-content h3:containsIN("'+searchVal+'")').length==0){
+				return false;
+			}
+			return true;
+
+
+		}});
+	}
+
 	//when progress filter changes
 	$('#articles-progress-filter a').click(function(){
+		
 		$('#articles-progress-filter li').removeClass('active');
 		$(this).parent().addClass('active');
-		var filterClass = '*';
 		
-		if($(this).attr('data-progress')!=='all'){
-			filterClass='.progress-'+$(this).attr('data-progress');
-		}
-		
-		$isotope.isotope({filter: filterClass});
+		updateFilter();
 
 		return false;
+	});
+
+	//edit filter as user types
+	$('#search-box').keyup(function(){
+		if($(this).val()){
+			$('.search-clear').show();
+		}
+		else{
+			$('.search-clear').hide();
+		}
+		updateFilter();
+	});
+
+	//clear search and filter when clear button clicked
+	$('.search-clear').click(function(){
+		$('#search-box').val('').change();
+		$('.search-clear').hide();
+	})
+
+	//when search box changes, update filter
+	$('#search-box').change(function(){
+		updateFilter();
 	});
 
 	//makes article links active

@@ -28,7 +28,6 @@
     </gap:config-file>
 
     <preference name="permissions" value="none" />
-    <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="false" />
     <preference name="orientation" value="landscape" />
 

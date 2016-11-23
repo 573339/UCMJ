@@ -233,14 +233,32 @@ hr {
 .assault {
   background: url(../img/assault-article.jpg); }
 
-.green, .progress-complete {
+.green, .progress-complete > a > div {
   border-top: 4px solid #2dcc70; }
 
-.red, .progress-new {
+.red, .progress-new > a > div {
   border-top: 4px solid #e74c3c; }
 
-.yellow, .progress-underway {
+.yellow, .progress-underway > a > div {
   border-top: 4px solid #f5be27; }
+
+/* SEARCH */
+.search-wrapper {
+  position: relative; }
+  .search-wrapper .search-clear {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    /* height: 30px; */
+    background: #007aff;
+    border-radius: 0 2px 2px 0;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    font-size: 30px; }
 
 /*SCENARIO TILES*/
 .scenario-tile, .larcenyA, .larcenyB, .larcenyC, .larcenyD {
