@@ -1,9 +1,25 @@
 /* Navigation */
 
+nav{
+	position:fixed;
+	top:0;
+	width: 100%;
+	z-index:100;
+}
+
+.nav-header{
+	position:fixed;
+	top:40px;
+	width: 100%;
+	z-index:100;
+}
+
 .nav-pills {
 	border:1px solid $blue-color;
 	width:auto;
 	float:left;
+	position:absolute;
+
 
 	li {
 	border-right: 1px solid $blue-color;

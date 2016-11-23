@@ -320,6 +320,12 @@ hr {
   -webkit-transition: .3s ease-out width;
   transition: .3s ease-out width; }
 
+#articles-library {
+  padding-top: 144px; }
+
+#article, #scenario {
+  padding-top: 40px; }
+
 /*BACKGROUNDS*/
 .banner {
   text-align: center;
@@ -1217,10 +1223,23 @@ a:focus {
 
 /* LAYOUTS- Page Layout Styles*/
 /* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+
+.nav-header {
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  z-index: 100; }
+
 .nav-pills {
   border: 1px solid #007aff;
   width: auto;
-  float: left; }
+  float: left;
+  position: absolute; }
   .nav-pills li {
     border-right: 1px solid #007aff; }
 
