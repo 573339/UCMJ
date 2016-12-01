@@ -200,7 +200,7 @@ $(document).ready(function(){
 				return false;
 			}
 
-			if(searchVal && $(this).find('.tile-content h3:containsIN("'+searchVal+'")').length==0){
+			if(searchVal && $(this).find('.tile-content *:containsIN("'+searchVal+'")').length==0){
 				return false;
 			}
 			return true;
