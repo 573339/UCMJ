@@ -233,18 +233,24 @@ hr {
 .assault {
   background: url(../img/assault-article.jpg); }
 
-.green, .progress-complete > a > div {
+#articles-progress-filter [data-progress="all"] {
+  border-top: 4px solid #bfbfbf; }
+
+.green, .progress-complete > a > div, #articles-progress-filter [data-progress="complete"] {
   border-top: 4px solid #2dcc70; }
 
-.red, .progress-new > a > div {
+.red, .progress-new > a > div, #articles-progress-filter [data-progress="new"] {
   border-top: 4px solid #e74c3c; }
 
-.yellow, .progress-underway > a > div {
+.yellow, .progress-underway > a > div, #articles-progress-filter [data-progress="underway"] {
   border-top: 4px solid #f5be27; }
 
 /* SEARCH */
 .search-wrapper {
   position: relative; }
+  .search-wrapper #search-box {
+    height: 44px;
+    padding-left: 8px; }
   .search-wrapper .search-clear {
     position: absolute;
     display: block;
@@ -257,7 +263,7 @@ hr {
     border-radius: 0 2px 2px 0;
     color: white;
     text-align: center;
-    line-height: 32px;
+    line-height: 44px;
     font-size: 30px; }
 
 /*SCENARIO TILES*/
@@ -1236,12 +1242,11 @@ nav {
   z-index: 100; }
 
 .nav-pills {
-  border: 1px solid #007aff;
   width: auto;
   float: left;
   position: absolute; }
   .nav-pills li {
-    border-right: 1px solid #007aff; }
+    border-right: 1px solid #d8d8d8; }
 
 .nav-pills > li:last-child {
   border-right: none; }
@@ -1251,7 +1256,8 @@ nav {
 
 .nav-pills > li > a {
   border-radius: 0px;
-  padding: 10px 28px; }
+  padding: 10px 28px;
+  background-color: #f1f1f1; }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
   border-radius: 0px; }

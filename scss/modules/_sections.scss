@@ -196,16 +196,21 @@ hr {
   background:url(../img/assault-article.jpg); 
 }
 
-.green, .progress-complete >a>div {
+#articles-progress-filter [data-progress="all"] {
+  border-top:4px solid rgb(191, 191, 191);
+}
+
+
+.green, .progress-complete >a>div, #articles-progress-filter [data-progress="complete"] {
   border-top:4px solid $green-color;
 }
 
-.red, .progress-new >a>div{
+.red, .progress-new >a>div, #articles-progress-filter [data-progress="new"]{
   border-top:4px solid $red-color;
 }
 
 
-.yellow, .progress-underway  >a>div{
+.yellow, .progress-underway  >a>div, #articles-progress-filter [data-progress="underway"]{
   border-top:4px solid $yellow-color;
 }
 
@@ -216,7 +221,8 @@ hr {
   position: relative;
 
   #search-box{
-
+    height: 44px;
+    padding-left:8px;
   }
   
   .search-clear{
@@ -231,7 +237,7 @@ hr {
     border-radius: 0 2px 2px 0;
     color: white;
     text-align: center;
-    line-height: 32px;
+    line-height: 44px;
     font-size: 30px;
   }
 
