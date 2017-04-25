@@ -16,6 +16,7 @@ var articles=[
 		"id": 0,
 		"article": "921.ARTICLE 121.",
 		"title": "Larceny and Wrongful Appropriation",
+		"slug":"larceny",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
 		"libraryImage": "larceny-article.jpg",
@@ -113,6 +114,7 @@ var articles=[
 		"id": 1,
 		"article": "886. ARTICLE 86.",
 		"title": "Absence Without Leave",
+		"slug":"awol",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
 		"libraryImage": "absence-article.jpg",
@@ -210,6 +212,7 @@ var articles=[
 		"id": 2,
 		"article": "892. ARTICLE 92.",
 		"title": "Failure to Obey Order or Regulation",
+		"slug":"failuretoobey",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
 		"libraryImage": "failure-article.jpg",
@@ -307,6 +310,7 @@ var articles=[
 		"id": 3,
 		"article": "907. ARTICLE 107.",
 		"title": "False Statements",
+		"slug":"falsestatements",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
 		"libraryImage": "false-article.jpg",
@@ -404,6 +408,7 @@ var articles=[
 		"id": 4,
 		"article": "911. ARTICLE 111.",
 		"title": "Drunken or Reckless Driving",
+		"slug":"drunkendriving",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
 		"libraryImage": "drunken-article.jpg",
@@ -501,6 +506,7 @@ var articles=[
 		"id": 5,
 		"article": "912a. ARTICLE 112a.",
 		"title": "Wrongful Use, Possession, Etc., of Controlled Substances",
+		"slug":"wrongfuluse",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
 		"libraryImage": "wrongful-article.jpg",
@@ -598,6 +604,7 @@ var articles=[
 		"id": 6,
 		"article": "920. ARTICLE 120.",
 		"title": "Rape and Carnal Knowledge",
+		"slug":"rape",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
 		"libraryImage": "rape-article.jpg",
@@ -648,6 +655,7 @@ var articles=[
 		"id": 7,
 		"article": "928. ARTICLE 128.",
 		"title": "Assault",
+		"slug":"assault",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
 		"image": "larceny.jpg",
 		"libraryImage": "assault-article.jpg",
@@ -777,7 +785,7 @@ function arrayScan(target, key){
 
 $(document).ready(function(){
 
-	
+	//restore saved article data
 	if(localStorage.getItem('ucmjArticles')){
 		articles=JSON.parse(localStorage.getItem('ucmjArticles'));
 	}
@@ -936,7 +944,15 @@ $(document).ready(function(){
 		$('#article-article').text(currentArticle.article);
 		$('#article-title').text(currentArticle.title);
 		$('#article-description').text(currentArticle.description);
+		$('.btn-read').attr('data-slug',currentArticle.slug);
 	}
+
+	//make read article buttons work
+	$('body').on('click','.btn-read',function(){
+		$('#primer .modal-body').load('ucmj.html #'+$(this).attr('data-slug'));
+		$('#primer').modal();
+		return false;
+	})
 
 	//makes article links active
 	$('#articles-library').on('click','a',function(){
