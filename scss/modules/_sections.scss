@@ -96,6 +96,8 @@ hr {
 
 .tile {
   background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center center;
   min-height:200px;
   display:block;
   color:$white-color;
@@ -249,6 +251,8 @@ hr {
 
 .scenario-tile {
   background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center center;
   min-height:232px;
   display:block;
   color:$white-color;
@@ -373,12 +377,10 @@ background:url(../img/larceny-thumb4.jpg);
   font-weight:lighter;
 }
 
-.larceny-banner {
-@extend .background;
-background-image: url("../img/larceny-banner.jpg");
-background-repeat:no-repeat;
-margin-bottom:20px;
-  
+#article-banner {
+  @extend .background;
+  background-repeat:no-repeat;
+  margin-bottom:20px;
 }
 
 #testModal,#responseModal{

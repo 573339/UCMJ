@@ -26,6 +26,7 @@ var articles=[
 				"id": 0,
 				"article": "921.ARTICLE 121",
 				"title": "Scenario 1",
+				"image": "larceny-1.jpg",
 				"content":[
 					{
 						"image": "scenario-01.jpg",
@@ -69,6 +70,7 @@ var articles=[
 				"id": 1,
 				"article": "921.ARTICLE 121",
 				"title": "Scenario 2",
+				"image": "larceny-2.jpg",
 				"content":[
 					{
 						"image": "larceny02-1.jpg",
@@ -124,6 +126,7 @@ var articles=[
 				"id": 0,
 				"article": "886.ARTICLE 86",
 				"title": "Scenario 1",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "awol01-1.jpg",
@@ -167,6 +170,7 @@ var articles=[
 				"id": 1,
 				"article": "886.ARTICLE 86",
 				"title": "Scenario 2",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "awol02-1.jpg",
@@ -222,6 +226,7 @@ var articles=[
 				"id": 0,
 				"article": "892.ARTICLE 92",
 				"title": "Scenario 1",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "failure01-1.jpg",
@@ -265,6 +270,7 @@ var articles=[
 				"id": 1,
 				"article": "892.ARTICLE 92",
 				"title": "Scenario 2",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "failure02-1.jpg",
@@ -320,6 +326,7 @@ var articles=[
 				"id": 0,
 				"article": "907.ARTICLE 107",
 				"title": "Scenario 1",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "false01-1.jpg",
@@ -363,6 +370,7 @@ var articles=[
 				"id": 1,
 				"article": "907.ARTICLE 107",
 				"title": "Scenario 2",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "false02-1.jpg",
@@ -418,6 +426,7 @@ var articles=[
 				"id": 0,
 				"article": "911.ARTICLE 111",
 				"title": "Scenario 1",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "drunken01-1.jpg",
@@ -461,6 +470,7 @@ var articles=[
 				"id": 1,
 				"article": "911.ARTICLE 111",
 				"title": "Scenario 2",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "drunken02-1.jpg",
@@ -516,6 +526,7 @@ var articles=[
 				"id": 0,
 				"article": "912a.ARTICLE 112a",
 				"title": "Scenario 1",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "wrongful01-1.jpg",
@@ -559,6 +570,7 @@ var articles=[
 				"id": 1,
 				"article": "912.ARTICLE 112a",
 				"title": "Scenario 2",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "wrongful02-1.jpg",
@@ -614,6 +626,7 @@ var articles=[
 				"id": 0,
 				"article": "902.ARTICLE 120",
 				"title": "Scenario 1",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "rape01-1.jpg",
@@ -665,6 +678,7 @@ var articles=[
 				"id": 0,
 				"article": "928.ARTICLE 128",
 				"title": "Scenario 1",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "assault01-1.jpg",
@@ -708,6 +722,7 @@ var articles=[
 				"id": 1,
 				"article": "928.ARTICLE 128",
 				"title": "Scenario 2",
+				"image": "larceny-scenario-1.jpg",
 				"content":[
 					{
 						"image": "assault02-01.jpg",
@@ -756,7 +771,7 @@ var articles=[
 function loadScenarioScreen(screenIndex){
 	currentScenarioScreen=screenIndex;
 	var currentScreen=currentScenario.content[screenIndex];
-	$('#scenario-screen-image').attr('src','img/'+currentScreen.image);
+	$('#scenario-screen-image').attr('src','articles/'+currentArticle.slug+'/'+currentScreen.image);
 	$('#scenario-screen-text').text(currentScreen.text);
 	$('#scenario-article-article').text(currentScenario.article);
 	$('#scenario-article-title').text(currentArticle.title);
@@ -810,7 +825,7 @@ $(document).ready(function(){
 
 			var newArticle=$('<div class="col-md-4 tile-hover article-tile progress-'+progressString+'">'+
 					'<a href="'+this.id+'">'+
-						'<div class="absence " style="background-image: url(img/'+this.libraryImage+'">'+
+						'<div class="tile" style="background-image: url(articles/'+this.slug+'/article.jpg">'+
 							'<div class="tile-content">'+
 								'<span>'+this.article+'</span>'+
 								'<h3>'+this.title+'</h3>'+
@@ -911,7 +926,7 @@ $(document).ready(function(){
 
 			var newScenario=$('<div class="col-md-3 tile-hover grid '+progressString+'"">'+
 				'<a href="'+this.id+'">'+
-					'<div class="larcenyA green">'+
+					'<div class="scenario-tile" style="background-image: url(\'articles/'+currentArticle.slug+'/'+this.image+'\')">'+
 						'<div class="tile-content">'+
 							'<span>'+currentArticle.article+'</span>'+
 							'<h2>'+this.title+'</h2>'+
@@ -942,6 +957,7 @@ $(document).ready(function(){
 		});
 
 		$('#article-article').text(currentArticle.article);
+		$('#article-banner').css('background-image','url("articles/'+currentArticle.slug+'/banner.jpg")');
 		$('#article-title').text(currentArticle.title);
 		$('#article-description').text(currentArticle.description);
 		$('.btn-read').attr('data-slug',currentArticle.slug);

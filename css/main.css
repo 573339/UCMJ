@@ -168,6 +168,8 @@ hr {
 
 .tile, .ucmj, .absence, .failure, .false, .drunken, .wrong, .rape, .larceny, .assault {
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   min-height: 200px;
   display: block;
   color: #ffffff;
@@ -269,6 +271,8 @@ hr {
 /*SCENARIO TILES*/
 .scenario-tile, .larcenyA, .larcenyB, .larcenyC, .larcenyD {
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   min-height: 232px;
   display: block;
   color: #ffffff;
@@ -348,15 +352,14 @@ hr {
     text-transform: uppercase;
     margin: 0; }
 
-.background, .larceny-banner {
+.background, #article-banner {
   height: 240px;
   width: 100%;
   text-align: center;
   color: #ffffff;
   font-weight: lighter; }
 
-.larceny-banner {
-  background-image: url("../img/larceny-banner.jpg");
+#article-banner {
   background-repeat: no-repeat;
   margin-bottom: 20px; }
 
@@ -393,7 +396,7 @@ hr {
     color: #717171;
     background-color: #dcdcdc; }
 
- /*
+/*
 WEBSLIDE 2016
  */
 ul, ol {
@@ -1194,6 +1197,7 @@ a:focus {
 .qa-wrap h4 {
   font-weight: bold;
   color: #50565b; }
+
 .qa-wrap p {
   color: #50565b;
   margin: 5px 0 0 0; }
