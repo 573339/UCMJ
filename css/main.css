@@ -247,6 +247,14 @@ hr {
 .yellow, .progress-underway > a > div, #articles-progress-filter [data-progress="underway"] {
   border-top: 4px solid #f5be27; }
 
+/*  read article modal */
+#primer span {
+  margin-top: 30px; }
+
+#primer h3 {
+  margin-top: 0;
+  margin-bottom: 30px; }
+
 /* SEARCH */
 .search-wrapper {
   position: relative; }

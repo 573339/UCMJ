@@ -18,7 +18,7 @@ var articles=[
 		"title": "Larceny and Wrongful Appropriation",
 		"slug":"larceny",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
-		"image": "larceny.jpg",
+		"image": "larceny-1.jpg",
 		"libraryImage": "larceny-article.jpg",
 		"progress": "complete",
 		"scenarios":[
@@ -29,19 +29,19 @@ var articles=[
 				"image": "larceny-1.jpg",
 				"content":[
 					{
-						"image": "scenario-01.jpg",
+						"image": "Larceny-1-01f.png",
 						"text": "Early in the morning, your fellow recruits prepare to move out on a busy training schedule."
 					},
 					{
-						"image": "scenario-02.jpg",
+						"image": "Larceny-1-02f.png",
 						"text": "Later that day when no one is around, you notice something unusual."
 					},
 					{
-						"image": "scenario-03.jpg",
+						"image": "Larceny-1-03f.png",
 						"text": "A couple of your fellow recruits have left their racks open."
 					},
 					{
-						"image": "scenario-04.jpg",
+						"image": "Larceny-1-04f.png",
 						"text": "Upon closer inspection you clearly see a wallet inside."
 					}
 				],
@@ -50,20 +50,19 @@ var articles=[
 					"description": "Upon closer inspection, you clearly see a wallet inside",
 					"options":[
 						{
-							"text": "Close the locker"
+							"text": "Close the locker",
+							"response":"Any interaction with property that is not your own could be misconstrued.  Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal property, or article of value of any kind is a punishable offense."
 						},
 						{
 							"text": "Report the issue to a superior",
-							"correct": true
+							"correct": true,
+							"response": "In the absence of the occupant, the unsecured state should be reported to a superior.  Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal property, or article of value of any kind is a punishable offense."
 						},
 						{
-							"text": "Take the unattended valuables"
+							"text": "Take the unattended valuables",
+							"response":"Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal property, or article of value of any kind is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Report the issue to a superior",
-						"description": "Any interaction with property that is not your own could be misconstrued. Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal, property, or article of value of any kind is a punishable offense."
-					}
+					]
 				}
 			},
 			{
@@ -73,19 +72,19 @@ var articles=[
 				"image": "larceny-2.jpg",
 				"content":[
 					{
-						"image": "larceny02-1.jpg",
+						"image": "Larceny-2-01f.jpg",
 						"text": "Getting ready for a busy day, you are one of the last of the recruits to use the head."
 					},
 					{
-						"image": "larceny02-2.jpg",
-						"text": "As you are walking out of the head, you notice that one of your fellow recruits accidently left their toothbrush on a sink."
+						"image": "Larceny-2-02f.jpg",
+						"text": "As you are wrapping up, you notice that one of your fellow recruits accidently left their toiletries on a sink."
 					},
 					{
-						"image": "larceny02-3.jpg",
+						"image": "Larceny-2-03f.jpg",
 						"text": "Looking closer, you are pretty sure you know the owner and consider him a friend."
 					},
 					{
-						"image": "larceny02-4.jpg",
+						"image": "Larceny-2-04f.jpg",
 						"text": "Your friend seems to have a good sense of humor, so you consider playing a prank."
 					}
 				],
@@ -95,19 +94,18 @@ var articles=[
 					"options":[
 						{
 							"text": "Tell them where you saw it",
-							"correct": true
+							"correct": true,
+							"response":"Any interaction with property that is not your own could be misconstrued.  Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal property, or article of value of any kind is a punishable offense."
 						},
 						{
-							"text": "Hide the toothbrush"
+							"text": "Hide the toothbrush",
+							"response":"Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal property, or article of value of any kind is a punishable offense."
 						},
 						{
-							"text": "Give it to them when you see them"
+							"text": "Give it to them when you see them",
+							"response":"Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal property, or article of value of any kind is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Tell them where you saw it",
-						"description": "Any interaction with property that is not your own could be misconstrued.  Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal property, or article of value of any kind is a punishable offense."
-					}
+					]
 				}
 			}
 		]
@@ -118,7 +116,7 @@ var articles=[
 		"title": "Absence Without Leave",
 		"slug":"awol",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
-		"image": "larceny.jpg",
+		"image": "awol-1.jpg",
 		"libraryImage": "absence-article.jpg",
 		"progress": "underway",
 		"scenarios":[
@@ -126,23 +124,23 @@ var articles=[
 				"id": 0,
 				"article": "886.ARTICLE 86",
 				"title": "Scenario 1",
-				"image": "larceny-scenario-1.jpg",
+				"image": "awol-1.jpg",
 				"content":[
 					{
-						"image": "awol01-1.jpg",
+						"image": "AWOL-1-01f.png",
 						"text": "Early in the morning, you are attending class."
 					},
 					{
-						"image": "awol01-2.jpg",
+						"image": "AWOL-1-02f.png",
 						"text": "Your studies to date have not allowed you time to look around."
 					},
 					{
-						"image": "awol01-3.jpg",
+						"image": "AWOL-1-03f.png",
 						"text": "As your last class of the morning winds down your instructor summarizes the lesson."
 					},
 					{
-						"image": "awol01-4.jpg",
-						"text": "You are directed to report to Remedial Swim Instruction by 15:30."
+						"image": "AWOL-1-04f.jpg",
+						"text": "As you are leaving, a RDC directs you to report to Remedial Swim Instruction by 15:30."
 					}
 				],
 				"test":{
@@ -150,42 +148,41 @@ var articles=[
 					"description": "You are directed to report to Remedial Swim Instruction by 15:30",
 					"options":[
 						{
-							"text": "Be on time, but look around"
+							"text": "Be on time, but look around",
+							"response":"Failure to go to an appointed place without permission at the time prescribed is a punishable offense."
 						},
 						{
-							"text": "Skip the RSI"
+							"text": "Skip the RSI",
+							"response":"Failure to go to an appointed place without permission at the time prescribed is a punishable offense."
 						},
 						{
 							"text": "Go directly to RSI as instructed",
-							"correct": true
+							"correct": true,
+							"response":"Curb your curiosity and be diligent.  Failure to go to an appointed place without permission at the time prescribed is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Go directly to RSI as instructed",
-						"description": "Curb your curiosity and be diligent.  Failure to go to an appointed place without permission at the time prescribed is a punishable offense."
-					}
+					]
 				}
 			},
 			{
 				"id": 1,
 				"article": "886.ARTICLE 86",
 				"title": "Scenario 2",
-				"image": "larceny-scenario-1.jpg",
+				"image": "awol-2.jpg",
 				"content":[
 					{
-						"image": "awol02-1.jpg",
+						"image": "AWOL-2-01f.jpg",
 						"text": "Taps just went down, and you should be fast asleep."
 					},
 					{
-						"image": "awol02-2.jpg",
+						"image": "AWOL-2-02f.jpg",
 						"text": "It was a very full day, but you are wide awake and your mind is racing."
 					},
 					{
-						"image": "awol02-3.jpg",
+						"image": "AWOL-2-03f.jpg",
 						"text": "Earlier in the day a fellow recruit had suggested that the two of you could sneak out for an hour."
 					},
 					{
-						"image": "awol02-4.jpg",
+						"image": "AWOL-2-04f.jpg",
 						"text": "You are giving serious consideration to sneaking out of your compartment to meet up with a fellow recruit."
 					}
 				],
@@ -195,19 +192,18 @@ var articles=[
 					"options":[
 						{
 							"text": "Don’t risk it",
-							"correct": true
+							"correct": true,
+							"response":"Consider the consequences and go back to sleep.  Absenting yourself without authority from your unit, organization, or place of duty at which you are required to be at the time prescribed is a punishable offense."
 						},
 						{
-							"text": "Sneak out without being seen"
+							"text": "Sneak out without being seen",
+							"response":"Absenting yourself without authority from your unit, organization, or place of duty at which you are required to be at the time prescribed is a punishable offense."
 						},
 						{
-							"text": "Get a lookout and make your exodus"
+							"text": "Get a lookout and make your exodus",
+							"response":"Absenting yourself without authority from your unit, organization, or place of duty at which you are required to be at the time prescribed is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Don’t risk it",
-						"description": "Consider the consequences and go back to sleep. Absenting yourself without authority from your unit, organization, or place of duty at which you are required to be at the time prescribed is a punishable offense."
-					}
+					]
 				}
 			}
 		]
@@ -218,7 +214,7 @@ var articles=[
 		"title": "Failure to Obey Order or Regulation",
 		"slug":"failuretoobey",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
-		"image": "larceny.jpg",
+		"image": "failuretoobey-1.jpg",
 		"libraryImage": "failure-article.jpg",
 		"progress": "new",
 		"scenarios":[
@@ -226,22 +222,22 @@ var articles=[
 				"id": 0,
 				"article": "892.ARTICLE 92",
 				"title": "Scenario 1",
-				"image": "larceny-scenario-1.jpg",
+				"image": "failuretoobey-1.jpg",
 				"content":[
 					{
-						"image": "failure01-1.jpg",
+						"image": "FailureToObey-1-01f.png",
 						"text": "Traveling back and forth across the base to attend classes and activities, there is a lot to see."
 					},
 					{
-						"image": "failure01-2.jpg",
+						"image": "FailureToObey-1-02f.jpg",
 						"text": "Down time is at a premium and you miss your family and friends."
 					},
 					{
-						"image": "failure01-3.jpg",
+						"image": "FailureToObey-1-03f.jpg",
 						"text": "You are ordered by a superior to report to Building 1405 and fill out some paperwork."
 					},
 					{
-						"image": "failure01-4.jpg",
+						"image": "FailureToObey-1-04f.jpg",
 						"text": "Should be about a 10 minute walk, but you might have time for a quick phone call home."
 					}
 				],
@@ -250,42 +246,41 @@ var articles=[
 					"description": "Should be about a 10 minute walk, but you might have time for a quick phone call home",
 					"options":[
 						{
-							"text": "Make a quick call from the payphones"
+							"text": "Make a quick call from the payphones",
+							"response":"Violating or failing to obey any lawful general order or regulation is a punishable offense."
 						},
 						{
 							"text": "Go directly to Building 1405 as ordered",
-							"correct": true
+							"correct": true,
+							"response":"Always better to be early than risk a distraction and arrive late. Violating or failing to obey any lawful general order or regulation is a punishable offense."
 						},
 						{
-							"text": "Stop by the payphones and see if you have time for a call"
+							"text": "Stop by the payphones and see if you have time for a call",
+							"response":"Violating or failing to obey any lawful general order or regulation is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Go directly to Building 1405 as ordered",
-						"description": "Always better to be early than risk a distraction and arrive late. Violating or failing to obey any lawful general order or regulation is a punishable offense."
-					}
+					]
 				}
 			},
 			{
 				"id": 1,
 				"article": "892.ARTICLE 92",
 				"title": "Scenario 2",
-				"image": "larceny-scenario-1.jpg",
+				"image": "failuretoobey-2.jpg",
 				"content":[
 					{
-						"image": "failure02-1.jpg",
+						"image": "FailureToObey-2-01f.jpg",
 						"text": "You are assigned fire watch for your compartment, and should be up most of the night."
 					},
 					{
-						"image": "failure02-2.jpg",
+						"image": "FailureToObey-2-02f.jpg",
 						"text": "After a few hours it becomes increasingly harder to stay alert."
 					},
 					{
-						"image": "failure02-3.jpg",
+						"image": "FailureToObey-2-03f.jpg",
 						"text": "Everyone is sound asleep and nobody is checking on you."
 					},
 					{
-						"image": "failure02-4.jpg",
+						"image": "FailureToObey-2-04f.jpg",
 						"text": "You figure you have done your part and consider slipping into your rack for the last couple of hours."
 					}
 				],
@@ -294,20 +289,19 @@ var articles=[
 					"description": "You figure you have done your part and consider slipping into your rack for the last couple of hours",
 					"options":[
 						{
-							"text": "Take the rest of the night off"
+							"text": "Take the rest of the night off",
+							"response":"Being derelict in the performance of your duties is a punishable offense."
 						},
 						{
-							"text": "Sleep standing up"
+							"text": "Sleep standing up",
+							"response":"Being derelict in the performance of your duties is a punishable offense"
 						},
 						{
 							"text": "Stay focused",
-							"correct": true
+							"correct": true,
+							"response":"How you perform your duties is a reflection on your character.  Being derelict in the performance of your duties is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Stay focused",
-						"description": "How you perform your duties is a reflection on your character. Being derelict in the performance of your duties is a punishable offense."
-					}
+					]
 				}
 			}
 		]
@@ -318,7 +312,7 @@ var articles=[
 		"title": "False Statements",
 		"slug":"falsestatements",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
-		"image": "larceny.jpg",
+		"image": "falsestatements-1.jpg",
 		"libraryImage": "false-article.jpg",
 		"progress": "underway",
 		"scenarios":[
@@ -326,22 +320,22 @@ var articles=[
 				"id": 0,
 				"article": "907.ARTICLE 107",
 				"title": "Scenario 1",
-				"image": "larceny-scenario-1.jpg",
+				"image": "falsestatements-1.jpg",
 				"content":[
 					{
-						"image": "false01-1.jpg",
+						"image": "False-Statements-1-01f.png",
 						"text": "Based on your Swim Qualification score, you are not much of a swimmer."
 					},
 					{
-						"image": "false01-2.jpg",
+						"image": "False-Statements-1-02f.jpg",
 						"text": "You are concerned that this will negatively impact your ability to graduate."
 					},
 					{
-						"image": "false01-3.jpg",
-						"text": "You noticed that the Hard Card area is often unattended at specific times of the day."
+						"image": "False-Statements-1-03f.jpg",
+						"text": "1.	You know where Hard Cards are kept within the berthing compartment.  You think you may be able to gain access to the cards."
 					},
 					{
-						"image": "false01-4.jpg",
+						"image": "False-Statements-1-04f.jpg",
 						"text": "You consider gaining access and placing a false entry on your Hard Card to positively impact your RSQ status."
 					}
 				],
@@ -351,41 +345,40 @@ var articles=[
 					"options":[
 						{
 							"text": "Correct the omission",
-							"correct": true
+							"correct": true,
+							"response":"Personal medical information is confidential and necessary.  Deceit with intent including signing a false record, return, regulation, order, or other official document, knowing it to be false is a punishable offense."
 						},
 						{
-							"text": "Sign and turn in the form"
+							"text": "Sign and turn in the form",
+							"response":"Deceit with intent including signing a false record, return, regulation, order, or other official document, knowing it to be false is a punishable offense."
 						},
 						{
-							"text": "Ask an authority figure for advice"
+							"text": "Ask an authority figure for advice",
+							"response":"Deceit with intent including signing a false record, return, regulation, order, or other official document, knowing it to be false is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Correct the omission",
-						"description": "Personal medical information is confidential and necessary.  Deceit with intent including signing a false record, return, regulation, order, or other official document, knowing it to be false is a punishable offense."
-					}
+					]
 				}
 			},
 			{
 				"id": 1,
 				"article": "907.ARTICLE 107",
 				"title": "Scenario 2",
-				"image": "larceny-scenario-1.jpg",
+				"image": "falsestatements-2.jpg",
 				"content":[
 					{
-						"image": "false02-1.jpg",
+						"image": "False-Statements-2-01f.jpg",
 						"text": "Your recruit formation is being thoroughly grilled by an RDC."
 					},
 					{
-						"image": "false02-2.jpg",
+						"image": "False-Statements-2-02f.jpg",
 						"text": "Apparently, they found a few snack wrappers that were hidden in your compartment."
 					},
 					{
-						"image": "false02-3.jpg",
+						"image": "False-Statements-2-03f.jpg",
 						"text": "You were hungry and knew it was against the rules."
 					},
 					{
-						"image": "false02-4.jpg",
+						"image": "False-Statements-2-04f.jpg",
 						"text": "Your RDC looks directly at you and asks if you know who is responsible."
 					}
 				],
@@ -394,20 +387,19 @@ var articles=[
 					"description": "Your RDC looks directly at you and asks if you know who is responsible",
 					"options":[
 						{
-							"text": "Take no action"
+							"text": "Take no action",
+							"response":"Making an intentionally deceitful false official statement knowing it to be false, is a punishable offense."
 						},
 						{
 							"text": "Admit guilt",
-							"correct": true
+							"correct": true,
+							"response":"Be honorable and take your punishment.  Making an intentionally deceitful false official statement knowing it to be false, is a punishable offense."
 						},
 						{
-							"text": "Falsely implicate others"
+							"text": "Falsely implicate others",
+							"response":"Making an intentionally deceitful false official statement knowing it to be false, is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Admit guilt",
-						"description": "Be honorable and take your punishment. Making an intentionally deceitful false official statement knowing it to be false, is a punishable offense."
-					}
+					]
 				}
 			}
 		]
@@ -418,7 +410,7 @@ var articles=[
 		"title": "Drunken or Reckless Driving",
 		"slug":"drunkendriving",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
-		"image": "larceny.jpg",
+		"image": "drunkendriving-1.jpg",
 		"libraryImage": "drunken-article.jpg",
 		"progress": "new",
 		"scenarios":[
@@ -426,22 +418,22 @@ var articles=[
 				"id": 0,
 				"article": "911.ARTICLE 111",
 				"title": "Scenario 1",
-				"image": "larceny-scenario-1.jpg",
+				"image": "drunkendriving-1.jpg",
 				"content":[
 					{
-						"image": "drunken01-1.jpg",
+						"image": "Drunken-1-01f.png",
 						"text": "Post boot camp graduation, you have now entered A School for technical training."
 					},
 					{
-						"image": "drunken01-2.jpg",
+						"image": "Drunken-1-02f.png",
 						"text": "While on liberty you lose track of your alcohol consumption."
 					},
 					{
-						"image": "drunken01-3.jpg",
+						"image": "Drunken-1-03f.png",
 						"text": "Now feeling light headed, you have to make sure you get back on time."
 					},
 					{
-						"image": "drunken01-4.jpg",
+						"image": "Drunken-1-04f.png",
 						"text": "One of the people you met offers to let you borrow their car to make the trek back."
 					}
 				],
@@ -450,42 +442,41 @@ var articles=[
 					"description": "One of the people you met offers to let you borrow their car to make the trek back",
 					"options":[
 						{
-							"text": "Borrow the car"
+							"text": "Borrow the car",
+							"response":"Operating any vehicle while drunk, or in a reckless or wanton manner is a punishable offense."
 						},
 						{
-							"text": "Borrow a bicycle"
+							"text": "Borrow a bicycle",
+							"response":"Operating any vehicle while drunk, or in a reckless or wanton manner is a punishable offense. "
 						},
 						{
 							"text": "Take a cab",
-							"correct": true
+							"correct": true,
+							"response":"Compounding on your overindulgence could have dire consequences.  Operating any vehicle while drunk, or in a reckless or wanton manner is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Take a cab",
-						"description": "Compounding on your overindulgence could have dire consequences.  Operating any vehicle while drunk, or in a reckless or wanton manner is a punishable offense."
-					}
+					]
 				}
 			},
 			{
 				"id": 1,
 				"article": "911.ARTICLE 111",
 				"title": "Scenario 2",
-				"image": "larceny-scenario-1.jpg",
+				"image": "drunkendriving-2.jpg",
 				"content":[
 					{
-						"image": "drunken02-1.jpg",
+						"image": "DWI-1-01f.png",
 						"text": "Post boot camp graduation, you have now entered A School for technical training."
 					},
 					{
-						"image": "drunken02-2.jpg",
+						"image": "DWI-1-02f.png",
 						"text": "While on liberty you take a large dose of over the counter cough medicine."
 					},
 					{
-						"image": "drunken02-3.jpg",
+						"image": "DWI-1-03f.png",
 						"text": "Now feeling light headed, you have to make sure you get back on time."
 					},
 					{
-						"image": "drunken02-4.jpg",
+						"image": "DWI-1-04f.png",
 						"text": "None of the people you met offers to let you borrow their car to make the trek back."
 					}
 				],
@@ -494,20 +485,19 @@ var articles=[
 					"description": "None of the people you met offers to let you borrow their car to make the trek back",
 					"options":[
 						{
-							"text": "Borrow the car"
+							"text": "Borrow the car",
+							"response":"Operating any vehicle while impaired by a substance is a punishable offense."
 						},
 						{
 							"text": "Take a cab",
-							"correct": true
+							"correct": true,
+							"response":"You should have read the label first.  Operating any vehicle while impaired by a substance is a punishable offense."
 						},
 						{
-							"text": "Borrow a bicycle"
+							"text": "Borrow a bicycle",
+							"response":"Operating any vehicle while impaired by a substance is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Take a cab",
-						"description": "You should have read the label first. Operating any vehicle while impaired by a substance is a punishable offense."
-					}
+					]
 				}
 			}
 		]
@@ -518,7 +508,7 @@ var articles=[
 		"title": "Wrongful Use, Possession, Etc., of Controlled Substances",
 		"slug":"wrongfuluse",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
-		"image": "larceny.jpg",
+		"image": "wrongfuluse-1.jpg",
 		"libraryImage": "wrongful-article.jpg",
 		"progress": "underway",
 		"scenarios":[
@@ -526,22 +516,22 @@ var articles=[
 				"id": 0,
 				"article": "912a.ARTICLE 112a",
 				"title": "Scenario 1",
-				"image": "larceny-scenario-1.jpg",
+				"image": "wrongfuluse-1.jpg",
 				"content":[
 					{
-						"image": "wrongful01-1.jpg",
+						"image": "Wrongful-1-01f.png",
 						"text": "Learning all of this information can be a stressful experience."
 					},
 					{
-						"image": "wrongful01-2.jpg",
+						"image": "Wrongful-1-02f.jpg",
 						"text": "Quizzes are particularly hard."
 					},
 					{
-						"image": "wrongful01-3.jpg",
+						"image": "Wrongful-1-03f.jpg",
 						"text": "In junior high school, you used a prescribed drug to keep your anxiety in check."
 					},
 					{
-						"image": "wrongful01-4.jpg",
+						"image": "Wrongful-1-04f.jpg",
 						"text": "You eventually grew out of the need, but snuck in a few pills from your old prescription just in case."
 					}
 				],
@@ -550,42 +540,41 @@ var articles=[
 					"description": "You eventually grew out of the need, but snuck in a few pills from your old prescription just in case",
 					"options":[
 						{
-							"text": "Take a half dose to take the edge off"
+							"text": "Take a half dose to take the edge off",
+							"response":"Wrongfully using, possessing, manufacturing, distributing, importing or introducing to an installation, vessel, vehicle, or aircraft of the armed forces of a prohibited substance is a punishable offense"
 						},
 						{
 							"text": "Dispose of the substance",
-							"correct": true
+							"correct": true,
+							"response":"Focus and diligent study is the best path to success.  Wrongfully using, possessing, manufacturing, distributing, importing or introducing to an installation, vessel, vehicle, or aircraft of the armed forces of a prohibited substance is a punishable offense."
 						},
 						{
-							"text": "Take a half pill and give the rest to a colleague"
+							"text": "Take a half pill and give the rest to a colleague",
+							"response":"Wrongfully using, possessing, manufacturing, distributing, importing or introducing to an installation, vessel, vehicle, or aircraft of the armed forces of a prohibited substance is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Dispose of the substance",
-						"description": "Focus and diligent study is the best path to success. Wrongfully using, possessing, manufacturing, distributing, importing or introducing to an installation, vessel, vehicle, or aircraft of the armed forces of a prohibited substance is a punishable offense."
-					}
+					]
 				}
 			},
 			{
 				"id": 1,
 				"article": "912.ARTICLE 112a",
 				"title": "Scenario 2",
-				"image": "larceny-scenario-1.jpg",
+				"image": "wrongfuluse-2.jpg",
 				"content":[
 					{
-						"image": "wrongful02-1.jpg",
+						"image": "Wrongful-2-01f.jpg",
 						"text": "You were recently issued Tylenol for a minor medical issue."
 					},
 					{
-						"image": "wrongful02-2.jpg",
+						"image": "Wrongful-2-02f.jpg",
 						"text": "You only used a small portion, and have a pretty good amount left over."
 					},
 					{
-						"image": "wrongful02-3.jpg",
+						"image": "Wrongful-2-03f.jpg",
 						"text": "You mention this to a few of you fellow recruits and the ideas started pouring in."
 					},
 					{
-						"image": "wrongful02-4.jpg",
+						"image": "Wrongful-2-04f.jpg",
 						"text": "The most interesting idea would have you chop the pills into powder and share with the other recruits."
 					}
 				],
@@ -594,20 +583,19 @@ var articles=[
 					"description": "The most interesting idea would have you chop the pills into powder and share with the other recruits",
 					"options":[
 						{
-							"text": "Share as planned"
+							"text": "Share as planned",
+							"response":"Involving others in a bad decision just compounds is mistake.  Wrongfully use, possession, manufacture, distribution, import or introduction to an installation, vessel, vehicle, or aircraft of the armed forces of a prohibited substance is a punishable offense."
 						},
 						{
-							"text": "Use all of it for yourself"
+							"text": "Use all of it for yourself",
+							"response":"A large dose of a seemingly benign drug can have unforeseen adverse effects.  Wrongfully use, possession, manufacture, distribution, import or introduction to an installation, vessel, vehicle, or aircraft of the armed forces of a prohibited substance is a punishable offense."
 						},
 						{
 							"text": "Turn in the unused portion",
-							"correct": true
+							"correct": true,
+							"response":"You don’t need it anymore and should turn it in or get rid of it.  Wrongfully use, possession, manufacture, distribution, import or introduction to an installation, vessel, vehicle, or aircraft of the armed forces of a prohibited substance is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Turn in the unused portion",
-						"description": "You don’t need it anymore and should turn it in or get rid of it. Wrongfully use, possession, manufacture, distribution, import or introduction to an installation, vessel, vehicle, or aircraft of the armed forces of a prohibited substance is a punishable offense."
-					}
+					]
 				}
 			}
 		]
@@ -618,7 +606,7 @@ var articles=[
 		"title": "Rape and Carnal Knowledge",
 		"slug":"rape",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
-		"image": "larceny.jpg",
+		"image": "rape-1.jpg",
 		"libraryImage": "rape-article.jpg",
 		"progress": "underway",
 		"scenarios":[
@@ -626,18 +614,18 @@ var articles=[
 				"id": 0,
 				"article": "902.ARTICLE 120",
 				"title": "Scenario 1",
-				"image": "larceny-scenario-1.jpg",
+				"image": "rape-1.jpg",
 				"content":[
 					{
-						"image": "rape01-1.jpg",
+						"image": "RASA-01f.jpg",
 						"text": "Running late and have to change into clean clothes."
 					},
 					{
-						"image": "rape01-2.jpg",
+						"image": "RASA-02f.jpg",
 						"text": "Another male recruit is also changing. The two of you joke around all the time but it's been limited to comments and gestures, without any physical contact."
 					},
 					{
-						"image": "rape01-3.jpg",
+						"image": "RASA-03f.jpg",
 						"text": "His back is to you, and you are thinking of how to get back at him for his last prank."
 					}
 				],
@@ -647,19 +635,18 @@ var articles=[
 					"options":[
 						{
 							"text": "Do nothing, you're already running late",
-							"correct": true
+							"correct": true,
+							"response":"Touching, or causing another person to touch, either directly or through the clothing is a punishable offense."
 						},
 						{
-							"text": "He messes with you all the time. Get him back by snapping him on the butt with the towel"
+							"text": "He messes with you all the time. Get him back by snapping him on the butt with the towel",
+							"response":"Touching, or causing another person to touch, either directly or through the clothing is a punishable offense."
 						},
 						{
-							"text": "You're friends. A snap on the butt with a towel is innocent joking around"
+							"text": "You're friends. A snap on the butt with a towel is innocent joking around",
+							"response":"Touching, or causing another person to touch, either directly or through the clothing is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Do nothing, you're already running late",
-						"description": "Touching, or causing another person to touch, either directly or through the clothing is a punishable offense."
-					}
+					]
 				}
 			}
 		]
@@ -670,7 +657,7 @@ var articles=[
 		"title": "Assault",
 		"slug":"assault",
 		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
-		"image": "larceny.jpg",
+		"image": "assault-1.jpg",
 		"libraryImage": "assault-article.jpg",
 		"progress": "underway",
 		"scenarios":[
@@ -678,22 +665,22 @@ var articles=[
 				"id": 0,
 				"article": "928.ARTICLE 128",
 				"title": "Scenario 1",
-				"image": "larceny-scenario-1.jpg",
+				"image": "assault-1.jpg",
 				"content":[
 					{
-						"image": "assault01-1.jpg",
+						"image": "Assault-1-01f.jpg",
 						"text": "Everyone has been working hard and tension has been pretty thick."
 					},
 					{
-						"image": "assault01-2.jpg",
+						"image": "Assault-1-02f.jpg",
 						"text": "Your bunkmate often talks in his sleep, and is keeping you awake."
 					},
 					{
-						"image": "assault01-3.jpg",
+						"image": "Assault-1-03f.jpg",
 						"text": "You have tried to think of a nice way to bring it up, but to no avail."
 					},
 					{
-						"image": "assault01-4.jpg",
+						"image": "Assault-1-04f.jpg",
 						"text": "One morning you had been robbed of sleep and consider making a threat to get them to stop."
 					}
 				],
@@ -703,41 +690,40 @@ var articles=[
 					"options":[
 						{
 							"text": "Talk to your RDC",
-							"correct": true
+							"correct": true,
+							"response":"You’re not a civilian anymore, and actions have consequences. Attempting or threatening to do bodily harm to another person is a punishable offense. Your RDC might change your bunk assignment."
 						},
 						{
-							"text": "Use a clenched fist to threaten them"
+							"text": "Use a clenched fist to threaten them",
+							"response":"Attempting or threatening to do bodily harm to another person is a punishable offense."
 						},
 						{
-							"text": "Intimidate them with an implied threat"
+							"text": "Intimidate them with an implied threat",
+							"response":"Attempting or threatening to do bodily harm to another person is a punishable offense."
 						}
-					],
-					"response":{
-						"title": "Talk to your RDC",
-						"description": "You’re not a civilian anymore, and actions have consequences. Attempting or threatening to do bodily harm to another person is a punishable offense. Your RDC might change your bunk assignment."
-					}
+					]
 				}
 			},
 			{
 				"id": 1,
 				"article": "928.ARTICLE 128",
 				"title": "Scenario 2",
-				"image": "larceny-scenario-1.jpg",
+				"image": "assault-2.jpg",
 				"content":[
 					{
-						"image": "assault02-01.jpg",
+						"image": "Assault-2-01f.jpg",
 						"text": "Everyone has been working hard to learn new skills and succeed."
 					},
 					{
-						"image": "assault02-02.jpg",
+						"image": "Assault-2-02f.jpg",
 						"text": "Unfortunately, your bunkmate is a chronic snorer, and is robbing you of sleep."
 					},
 					{
-						"image": "assault02-03.jpg",
+						"image": "Assault-2-03f.jpg",
 						"text": "You have mentioned it before, but the issue has continued."
 					},
 					{
-						"image": "assault02-04.jpg",
+						"image": "Assault-2-04f.jpg",
 						"text": "After a particularly difficult night you consider pushing him out of his bunk to teach him a lesson."
 					}
 				],
@@ -746,20 +732,19 @@ var articles=[
 					"description": "After a particularly difficult night you consider pushing him out of his bunk to teach him a lesson",
 					"options":[
 						{
-							"text": "Push them onto the floor"
+							"text": "Push them onto the floor",
+							"response":"Intentionally committing an assault with or without a dangerous weapon or other means or force likely to produce death or grievous bodily harm is a punishable offense"
 						},
 						{
-							"text": "Thump them on the side of the head."
+							"text": "Thump them on the side of the head.",
+							"response":"Intentionally committing an assault with or without a dangerous weapon or other means or force likely to produce death or grievous bodily harm is a punishable offense."
 						},
 						{
 							"text": "Talk to your RDC.",
-							"correct": true
+							"correct": true,
+							"response":"Everyone is stressed and accidents happen. Intentionally committing an assault with or without a dangerous weapon or other means or force likely to produce death or grievous bodily harm is "
 						}
-					],
-					"response":{
-						"title": "Talk to your RDC.",
-						"description": "Everyone is stressed and accidents happen. Intentionally committing an assault with or without a dangerous weapon or other means or force likely to produce death or grievous bodily harm is a punishable offense. Your RDC might change your bunk assignment."
-					}
+					]
 				}
 			}
 		]
@@ -825,7 +810,7 @@ $(document).ready(function(){
 
 			var newArticle=$('<div class="col-md-4 tile-hover article-tile progress-'+progressString+'">'+
 					'<a href="'+this.id+'">'+
-						'<div class="tile" style="background-image: url(articles/'+this.slug+'/article.jpg">'+
+						'<div class="tile" style="background-image: url(articles/'+this.slug+'/'+this.image+'">'+
 							'<div class="tile-content">'+
 								'<span>'+this.article+'</span>'+
 								'<h3>'+this.title+'</h3>'+
@@ -1008,12 +993,12 @@ $(document).ready(function(){
 			$('#testModal .test-question').text(currentScenario.test.description);
 			$('#testModal .modal-footer').empty();
 
-			$.each(currentScenario.test.options,function(){
+			$.each(currentScenario.test.options,function(index){
 				var testClass='';
 				if(this.correct===true){
 					testClass='test-correct';
 				}
-				var newOption=$('<a href="#" class="btn btn-primary btn-block '+testClass+'">'+this.text+'</a>');
+				var newOption=$('<a href="#" class="btn btn-primary btn-block '+testClass+'" data-answerID="'+index+'">'+this.text+'</a>');
 				newOption.appendTo('#testModal .modal-footer');
 			});
 
@@ -1027,8 +1012,8 @@ $(document).ready(function(){
 					$('#responseModal .modal-subtitle').removeClass('correct incorrect').addClass('incorrect').text('Incorrect');
 				}
 
-				$('#responseModal .modal-title').text(currentScenario.test.response.title);
-				$('#responseModal .test-response').text(currentScenario.test.response.description);
+				$('#responseModal .modal-title').text(currentScenario.test.options[$(this).attr('data-answerID')].text);
+				$('#responseModal .test-response').text(currentScenario.test.options[$(this).attr('data-answerID')].response);
 				$('#testModal').modal('hide');
 				$('#responseModal').modal();
 			});
