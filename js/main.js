@@ -29,19 +29,19 @@ var articles=[
 				"image": "larceny-1.jpg",
 				"content":[
 					{
-						"image": "Larceny-1-01f.png",
+						"image": "Larceny-1-01f.jpg",
 						"text": "Early in the morning, your fellow recruits prepare to move out on a busy training schedule."
 					},
 					{
-						"image": "Larceny-1-02f.png",
+						"image": "Larceny-1-02f.jpg",
 						"text": "Later that day when no one is around, you notice something unusual."
 					},
 					{
-						"image": "Larceny-1-03f.png",
+						"image": "Larceny-1-03f.jpg",
 						"text": "A couple of your fellow recruits have left their racks open."
 					},
 					{
-						"image": "Larceny-1-04f.png",
+						"image": "Larceny-1-04f.jpg",
 						"text": "Upon closer inspection you clearly see a wallet inside."
 					}
 				],
@@ -127,15 +127,15 @@ var articles=[
 				"image": "awol-1.jpg",
 				"content":[
 					{
-						"image": "AWOL-1-01f.png",
+						"image": "AWOL-1-01f.jpg",
 						"text": "Early in the morning, you are attending class."
 					},
 					{
-						"image": "AWOL-1-02f.png",
+						"image": "AWOL-1-02f.jpg",
 						"text": "Your studies to date have not allowed you time to look around."
 					},
 					{
-						"image": "AWOL-1-03f.png",
+						"image": "AWOL-1-03f.jpg",
 						"text": "As your last class of the morning winds down your instructor summarizes the lesson."
 					},
 					{
@@ -225,7 +225,7 @@ var articles=[
 				"image": "failuretoobey-1.jpg",
 				"content":[
 					{
-						"image": "FailureToObey-1-01f.png",
+						"image": "FailureToObey-1-01f.jpg",
 						"text": "Traveling back and forth across the base to attend classes and activities, there is a lot to see."
 					},
 					{
@@ -323,7 +323,7 @@ var articles=[
 				"image": "falsestatements-1.jpg",
 				"content":[
 					{
-						"image": "False-Statements-1-01f.png",
+						"image": "False-Statements-1-01f.jpg",
 						"text": "Based on your Swim Qualification score, you are not much of a swimmer."
 					},
 					{
@@ -421,19 +421,19 @@ var articles=[
 				"image": "drunkendriving-1.jpg",
 				"content":[
 					{
-						"image": "Drunken-1-01f.png",
+						"image": "Drunken-1-01f.jpg",
 						"text": "Post boot camp graduation, you have now entered A School for technical training."
 					},
 					{
-						"image": "Drunken-1-02f.png",
+						"image": "Drunken-1-02f.jpg",
 						"text": "While on liberty you lose track of your alcohol consumption."
 					},
 					{
-						"image": "Drunken-1-03f.png",
+						"image": "Drunken-1-03f.jpg",
 						"text": "Now feeling light headed, you have to make sure you get back on time."
 					},
 					{
-						"image": "Drunken-1-04f.png",
+						"image": "Drunken-1-04f.jpg",
 						"text": "One of the people you met offers to let you borrow their car to make the trek back."
 					}
 				],
@@ -464,19 +464,19 @@ var articles=[
 				"image": "drunkendriving-2.jpg",
 				"content":[
 					{
-						"image": "DWI-1-01f.png",
+						"image": "DWI-1-01f.jpg",
 						"text": "Post boot camp graduation, you have now entered A School for technical training."
 					},
 					{
-						"image": "DWI-1-02f.png",
+						"image": "DWI-1-02f.jpg",
 						"text": "While on liberty you take a large dose of over the counter cough medicine."
 					},
 					{
-						"image": "DWI-1-03f.png",
+						"image": "DWI-1-03f.jpg",
 						"text": "Now feeling light headed, you have to make sure you get back on time."
 					},
 					{
-						"image": "DWI-1-04f.png",
+						"image": "DWI-1-04f.jpg",
 						"text": "None of the people you met offers to let you borrow their car to make the trek back."
 					}
 				],
@@ -519,7 +519,7 @@ var articles=[
 				"image": "wrongfuluse-1.jpg",
 				"content":[
 					{
-						"image": "Wrongful-1-01f.png",
+						"image": "Wrongful-1-01f.jpg",
 						"text": "Learning all of this information can be a stressful experience."
 					},
 					{
