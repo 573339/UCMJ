@@ -790,12 +790,18 @@ $(document).ready(function(){
 		articles=JSON.parse(localStorage.getItem('ucmjArticles'));
 	}
 
+	$.each(articles, function(){
+		$('<div>').load('ucmj.html #'+this.slug).unwrap().appendTo('#primer .modal-body .primer-articles');
+		$('<li><a href="#'+this.slug+'">'+this.title+'</a></li>').appendTo('#primer .modal-body .primer-nav');
+	});
+
 	
 	//populates article library
 	function reloadLibrary(){
 		$('#articles-library').empty();
 		$.each(articles, function(){
 			
+			//determine progress states
 			var progressString;
 			switch (arrayScan(this.scenarios,'complete')/this.scenarios.length){
 				case 1:
@@ -808,6 +814,7 @@ $(document).ready(function(){
 					progressString='underway';		
 			}
 
+			//create tile and append to article library
 			var newArticle=$('<div class="col-md-4 tile-hover article-tile progress-'+progressString+'">'+
 					'<a href="'+this.id+'">'+
 						'<div class="tile" style="background-image: url(articles/'+this.slug+'/'+this.image+'">'+
@@ -950,10 +957,13 @@ $(document).ready(function(){
 
 	//make read article buttons work
 	$('body').on('click','.btn-read',function(){
-		$('#primer .modal-body').load('ucmj.html #'+$(this).attr('data-slug'));
-		$('#primer').modal();
+		var el=$(this);
+		$('#primer').modal().on('shown.bs.modal',function(){
+			$('.modal-body').scrollTop($('.primer-articles #'+el.attr('data-slug')).offset().top-139);
+		});
 		return false;
-	})
+	});
+
 
 	//makes article links active
 	$('#articles-library').on('click','a',function(){

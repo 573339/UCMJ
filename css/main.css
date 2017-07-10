@@ -248,12 +248,46 @@ hr {
   border-top: 4px solid #f5be27; }
 
 /*  read article modal */
+#primer .close {
+  position: absolute;
+  right: 20px;
+  top: 20px; }
+
+#primer .modal-dialog {
+  width: 900px; }
+  #primer .modal-dialog .modal-body {
+    height: 590px;
+    overflow: auto;
+    padding: 0;
+    background: #eee; }
+    #primer .modal-dialog .modal-body > div {
+      float: left; }
+    #primer .modal-dialog .modal-body .primer-nav {
+      position: fixed;
+      width: 300px; }
+      #primer .modal-dialog .modal-body .primer-nav li a {
+        display: block;
+        padding: 16px 20px;
+        border-bottom: 1px solid #fff; }
+    #primer .modal-dialog .modal-body .primer-articles {
+      background: white;
+      width: 600px;
+      margin-left: 300px; }
+      #primer .modal-dialog .modal-body .primer-articles div[id] {
+        padding-top: 30px;
+        padding-bottom: 20px; }
+
 #primer span {
-  margin-top: 30px; }
+  margin-top: 30px;
+  color: #007aff; }
 
 #primer h3 {
   margin-top: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
+
+#primer h1 {
+  margin: 0;
+  line-height: 68px; }
 
 #primer .indent.indent-1 {
   margin-left: 30px; }
@@ -1171,7 +1205,8 @@ a:focus {
   padding: 15px 30px; }
 
 .modal-bkgd {
-  background: #00060b url("../img/modal-header.jpg") no-repeat center center; }
+  background: #00060b url("../img/modal-header.jpg") no-repeat center center;
+  background-size: cover; }
   .modal-bkgd h1 {
     color: #ffffff;
     text-align: center;

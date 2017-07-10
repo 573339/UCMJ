@@ -219,12 +219,67 @@ hr {
 
 /*  read article modal */
 #primer{
+
+  .close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .modal-dialog{
+    width:900px;
+
+    .modal-body{
+      height: 590px;
+      overflow:auto;
+      padding: 0;
+      background: #eee;
+
+      &>div{
+        float:left;
+      }
+
+      .primer-nav{
+
+        position:fixed;
+        width: 300px;
+
+        li a{
+          display:block;
+          padding: 16px 20px;
+          border-bottom:1px solid #fff;
+        }
+
+
+      }
+
+      .primer-articles{
+        background:white;
+        width: 600px;
+        margin-left:300px;
+
+        & div[id]{
+          padding-top: 30px;
+          padding-bottom: 20px;
+        }
+
+      }
+    }
+  }
+
   span{
     margin-top: 30px;
+    color: $blue-color;
   }
+
   h3{
     margin-top:0;
-    margin-bottom:30px;
+    margin-bottom:10px;
+  }
+
+  h1{
+    margin:0;
+    line-height: 68px;
   }
   .indent{
     &.indent-1{
