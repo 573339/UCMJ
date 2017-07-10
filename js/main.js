@@ -17,7 +17,7 @@ var articles=[
 		"article": "921.ARTICLE 121.",
 		"title": "Larceny and Wrongful Appropriation",
 		"slug":"larceny",
-		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"description": "Wrongfully taking, obtaining, or withholding from the owner any money, personal property, or article of value of any kind.",
 		"image": "larceny-1.jpg",
 		"libraryImage": "larceny-article.jpg",
 		"progress": "complete",
@@ -115,7 +115,7 @@ var articles=[
 		"article": "886. ARTICLE 86.",
 		"title": "Absence Without Leave",
 		"slug":"awol",
-		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"description": "Failure to go to an appointed place of duty at the time prescribed or absenting yourself from your unit, organization, or place of duty.",
 		"image": "awol-1.jpg",
 		"libraryImage": "absence-article.jpg",
 		"progress": "underway",
@@ -213,7 +213,7 @@ var articles=[
 		"article": "892. ARTICLE 92.",
 		"title": "Failure to Obey Order or Regulation",
 		"slug":"failuretoobey",
-		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"description": "Violating or failing to obey a general order or regulation or dereliction of duties.",
 		"image": "failuretoobey-1.jpg",
 		"libraryImage": "failure-article.jpg",
 		"progress": "new",
@@ -294,7 +294,7 @@ var articles=[
 						},
 						{
 							"text": "Sleep standing up",
-							"response":"Being derelict in the performance of your duties is a punishable offense"
+							"response":"Being derelict in the performance of your duties is a punishable offense."
 						},
 						{
 							"text": "Stay focused",
@@ -311,7 +311,7 @@ var articles=[
 		"article": "907. ARTICLE 107.",
 		"title": "False Statements",
 		"slug":"falsestatements",
-		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"description": "Willfully signing any false record, return, regulation, order, or other official document, knowing it to be false or making false statements.",
 		"image": "falsestatements-1.jpg",
 		"libraryImage": "false-article.jpg",
 		"progress": "underway",
@@ -332,7 +332,7 @@ var articles=[
 					},
 					{
 						"image": "False-Statements-1-03f.jpg",
-						"text": "1.	You know where Hard Cards are kept within the berthing compartment.  You think you may be able to gain access to the cards."
+						"text": "You know where Hard Cards are kept within the berthing compartment.  You think you may be able to gain access to the cards."
 					},
 					{
 						"image": "False-Statements-1-04f.jpg",
@@ -409,7 +409,7 @@ var articles=[
 		"article": "911. ARTICLE 111.",
 		"title": "Drunken or Reckless Driving",
 		"slug":"drunkendriving",
-		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"description": "Operating any vehicle while drunk, in a reckless or wanton manner, or while impaired by a substance.",
 		"image": "drunkendriving-1.jpg",
 		"libraryImage": "drunken-article.jpg",
 		"progress": "new",
@@ -477,7 +477,7 @@ var articles=[
 					},
 					{
 						"image": "DWI-1-04f.jpg",
-						"text": "None of the people you met offers to let you borrow their car to make the trek back."
+						"text": "One of the people you met offers to let you borrow their car to make the trek back."
 					}
 				],
 				"test":{
@@ -507,7 +507,7 @@ var articles=[
 		"article": "912a. ARTICLE 112a.",
 		"title": "Wrongful Use, Possession, Etc., of Controlled Substances",
 		"slug":"wrongfuluse",
-		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"description": "Wrongful use, possession, manufacture, distribution, import/export or introduction of an illegal or specified controlled substances.",
 		"image": "wrongfuluse-1.jpg",
 		"libraryImage": "wrongful-article.jpg",
 		"progress": "underway",
@@ -541,7 +541,7 @@ var articles=[
 					"options":[
 						{
 							"text": "Take a half dose to take the edge off",
-							"response":"Wrongfully using, possessing, manufacturing, distributing, importing or introducing to an installation, vessel, vehicle, or aircraft of the armed forces of a prohibited substance is a punishable offense"
+							"response":"Wrongfully using, possessing, manufacturing, distributing, importing or introducing to an installation, vessel, vehicle, or aircraft of the armed forces of a prohibited substance is a punishable offense."
 						},
 						{
 							"text": "Dispose of the substance",
@@ -571,7 +571,7 @@ var articles=[
 					},
 					{
 						"image": "Wrongful-2-03f.jpg",
-						"text": "You mention this to a few of you fellow recruits and the ideas started pouring in."
+						"text": "You mention this to a few of your fellow recruits and the ideas started pouring in."
 					},
 					{
 						"image": "Wrongful-2-04f.jpg",
@@ -603,9 +603,9 @@ var articles=[
 	{
 		"id": 6,
 		"article": "920. ARTICLE 120.",
-		"title": "Rape and Carnal Knowledge",
+		"title": "Rape and Sexual Assault",
 		"slug":"rape",
-		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"description": "Committing an unwanted sexual act or sexual assault of any kind upon another person.",
 		"image": "rape-1.jpg",
 		"libraryImage": "rape-article.jpg",
 		"progress": "underway",
@@ -656,7 +656,7 @@ var articles=[
 		"article": "928. ARTICLE 128.",
 		"title": "Assault",
 		"slug":"assault",
-		"description": "Aliquam et mattis turpis. Etiam tincidunt ex vel leo luctus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo nisl ac vestibulum convallis.",
+		"description": "Attempting or threatening another with unlawful force or violence to do bodily harm.",
 		"image": "assault-1.jpg",
 		"libraryImage": "assault-article.jpg",
 		"progress": "underway",
@@ -729,11 +729,11 @@ var articles=[
 				],
 				"test":{
 					"prompt": "What do you do?",
-					"description": "After a particularly difficult night you consider pushing him out of his bunk to teach him a lesson",
+					"description": "After a particularly difficult night you consider pushing him out of his bunk to teach him a lesson.",
 					"options":[
 						{
 							"text": "Push them onto the floor",
-							"response":"Intentionally committing an assault with or without a dangerous weapon or other means or force likely to produce death or grievous bodily harm is a punishable offense"
+							"response":"Intentionally committing an assault with or without a dangerous weapon or other means or force likely to produce death or grievous bodily harm is a punishable offense."
 						},
 						{
 							"text": "Thump them on the side of the head.",
@@ -742,7 +742,7 @@ var articles=[
 						{
 							"text": "Talk to your RDC.",
 							"correct": true,
-							"response":"Everyone is stressed and accidents happen. Intentionally committing an assault with or without a dangerous weapon or other means or force likely to produce death or grievous bodily harm is "
+							"response":"Everyone is stressed and accidents happen. Intentionally committing an assault with or without a dangerous weapon or other means or force likely to produce death or grievous bodily harm is a punishable offense. Your RDC might change your bunk assignment."
 						}
 					]
 				}
@@ -978,7 +978,7 @@ $(document).ready(function(){
 
 	//back to article
 	$('#btn-article-back').click(function(){
-		changeTitle('Primer');
+		changeTitle('UCMJ Primer');
 		$('.screen-scenario').fadeOut(function(){
 			$('.screen-article').fadeIn();
 		});
@@ -1004,11 +1004,13 @@ $(document).ready(function(){
 
 			$('#testModal .modal-footer a').click(function(){
 				if($(this).hasClass('test-correct')){
+					$('#responseModal').addClass('modal-correct');
 					$('#responseModal .modal-subtitle').removeClass('correct incorrect').addClass('correct').text('Correct');
 					currentScenario.complete=true;
 					localStorage.setItem('ucmjArticles',JSON.stringify(articles));
 				}
 				else{
+					$('#responseModal').removeClass('modal-correct');
 					$('#responseModal .modal-subtitle').removeClass('correct incorrect').addClass('incorrect').text('Incorrect');
 				}
 
@@ -1035,7 +1037,7 @@ $(document).ready(function(){
 
 	$('.btn-test-toarticle').click(function(){
 		$('#responseModal').modal('hide');
-		changeTitle('Primer');
+		changeTitle('UCMJ Primer');
 		reloadScenarios();
 		$('.screen-scenario').fadeOut(function(){
 			$('.screen-article').fadeIn();

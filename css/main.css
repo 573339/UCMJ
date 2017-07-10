@@ -308,6 +308,10 @@ hr {
 .scenario {
   padding: 0; }
 
+img#scenario-screen-image {
+  width: 1024px;
+  height: 661px; }
+
 .bar {
   position: fixed;
   bottom: 0;
@@ -402,13 +406,22 @@ hr {
       background-color: red; }
   #testModal .btn, #responseModal .btn {
     border-radius: 0;
-    padding: 16px; }
+    padding: 16px;
+    white-space: normal; }
   #testModal .btn-primary, #responseModal .btn-primary {
     color: white;
     background-color: #007aff; }
   #testModal .btn-secondary, #responseModal .btn-secondary {
     color: #717171;
     background-color: #dcdcdc; }
+  #testModal .btn-test-tryagain, #responseModal .btn-test-tryagain {
+    display: block; }
+  #testModal .btn-test-toarticle, #responseModal .btn-test-toarticle {
+    display: none; }
+  #testModal.modal-correct .btn-test-tryagain, #responseModal.modal-correct .btn-test-tryagain {
+    display: none; }
+  #testModal.modal-correct .btn-test-toarticle, #responseModal.modal-correct .btn-test-toarticle {
+    display: block; }
 
 /*
 WEBSLIDE 2016

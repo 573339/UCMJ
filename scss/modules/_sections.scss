@@ -309,6 +309,11 @@ background:url(../img/larceny-thumb4.jpg);
   padding:0;
 }
 
+img#scenario-screen-image {
+  width: 1024px;
+  height: 661px;
+}
+
 .bar {
   position:fixed;
   bottom:0;
@@ -439,9 +444,10 @@ background:url(../img/larceny-thumb4.jpg);
 
 
   .btn {
-    
+
     border-radius: 0;
     padding: 16px;
+    white-space: normal;
   }
 
   .btn-primary{
@@ -452,6 +458,22 @@ background:url(../img/larceny-thumb4.jpg);
   .btn-secondary{
     color: #717171;
     background-color: #dcdcdc;
+  }
+
+  .btn-test-tryagain{
+      display:block;
+    }
+    .btn-test-toarticle{
+      display:none;
+    }
+
+  &.modal-correct{
+    .btn-test-tryagain{
+      display:none;
+    }
+    .btn-test-toarticle{
+      display:block;
+    }
   }
 }
 
