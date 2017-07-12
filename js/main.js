@@ -959,9 +959,30 @@ $(document).ready(function(){
 	$('body').on('click','.btn-read',function(){
 		var el=$(this);
 		$('#primer').modal().on('shown.bs.modal',function(){
-			$('.modal-body').scrollTop($('.primer-articles #'+el.attr('data-slug')).offset().top-139);
+			$('.primer-articles').scrollTop($('.primer-articles #'+el.attr('data-slug')).offset().top-139);
 		});
 		return false;
+	});
+
+	function isScrolledIntoView(elem)
+	{
+	    var docViewTop = $('.primer-articles').scrollTop();
+	    var docViewBottom = docViewTop + $('.primer-articles').height();
+
+	    var elemTop = $(elem).offset().top;
+	    var elemBottom = elemTop + $(elem).height();
+
+	    console.log(docViewTop,docViewBottom,elemTop,elemBottom);
+
+	    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}
+
+	$('.primer-articles').scroll(function(){
+		console.log($('.primer-articles').scrollTop());
+
+		$('.primer-articles div[id]').each(function(){
+			console.log(isScrolledIntoView($(this))+' '+$(this).attr('id'));
+		});
 	});
 
 

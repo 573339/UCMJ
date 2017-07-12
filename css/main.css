@@ -253,17 +253,18 @@ hr {
   right: 20px;
   top: 20px; }
 
+#primer .modal-content {
+  border: 0; }
+
 #primer .modal-dialog {
   width: 900px; }
   #primer .modal-dialog .modal-body {
     height: 590px;
-    overflow: auto;
     padding: 0;
     background: #eee; }
-    #primer .modal-dialog .modal-body > div {
+    #primer .modal-dialog .modal-body > * {
       float: left; }
     #primer .modal-dialog .modal-body .primer-nav {
-      position: fixed;
       width: 300px; }
       #primer .modal-dialog .modal-body .primer-nav li a {
         display: block;
@@ -272,7 +273,8 @@ hr {
     #primer .modal-dialog .modal-body .primer-articles {
       background: white;
       width: 600px;
-      margin-left: 300px; }
+      height: 590px;
+      overflow: auto; }
       #primer .modal-dialog .modal-body .primer-articles div[id] {
         padding-top: 30px;
         padding-bottom: 20px; }

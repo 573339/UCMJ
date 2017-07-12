@@ -225,23 +225,24 @@ hr {
     right: 20px;
     top: 20px;
   }
-
+  .modal-content{
+    border:0;
+  }
   .modal-dialog{
     width:900px;
 
     .modal-body{
       height: 590px;
-      overflow:auto;
       padding: 0;
       background: #eee;
 
-      &>div{
+      &>*{
         float:left;
       }
 
       .primer-nav{
 
-        position:fixed;
+        
         width: 300px;
 
         li a{
@@ -256,7 +257,8 @@ hr {
       .primer-articles{
         background:white;
         width: 600px;
-        margin-left:300px;
+        height: 590px;
+        overflow:auto;
 
         & div[id]{
           padding-top: 30px;
