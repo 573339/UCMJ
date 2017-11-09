@@ -786,8 +786,15 @@ function arrayScan(target, key){
 $(document).ready(function(){
 
 	//restore saved article data
-	if(localStorage.getItem('ucmjArticles')){
-		articles=JSON.parse(localStorage.getItem('ucmjArticles'));
+	if(Cookies.get('ucmjArticles')){
+		var localdata=JSON.parse(Cookies.get('ucmjArticles'));
+	
+		$.each(localdata,function(){
+			var articleIndex=this.articleIndex;
+			$.each(this.scenarios,function(){
+				articles[articleIndex].scenarios[this].complete=true;
+			});
+		});
 	}
 
 	$.each(articles, function(){
@@ -1038,7 +1045,21 @@ $(document).ready(function(){
 					$('#responseModal').addClass('modal-correct');
 					$('#responseModal .modal-subtitle').removeClass('correct incorrect').addClass('correct').text('Correct');
 					currentScenario.complete=true;
-					localStorage.setItem('ucmjArticles',JSON.stringify(articles));
+					
+					var localdata=[];
+					$.each(articles,function(index){
+
+						var currentIndex=index;
+						if(arrayScan(this.scenarios,'complete')){
+							localdata.push({"articleIndex": currentIndex,"scenarios":[]});
+							$.each(this.scenarios,function(index){
+								if(this.complete){
+									localdata[localdata.length-1].scenarios.push(index);
+								}
+							});
+						}
+					});
+					Cookies.set('ucmjArticles',JSON.stringify(localdata));
 				}
 				else{
 					$('#responseModal').removeClass('modal-correct');
