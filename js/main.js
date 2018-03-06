@@ -309,7 +309,7 @@ var articles=[
 	{
 		"id": 3,
 		"article": "907. ARTICLE 107.",
-		"title": "False Statements",
+		"title": "False official statements; false swearing",
 		"slug":"falsestatements",
 		"description": "Willfully signing any false record, return, regulation, order, or other official document, knowing it to be false or making false statements.",
 		"image": "falsestatements-1.jpg",
@@ -406,8 +406,8 @@ var articles=[
 	},
 	{
 		"id": 4,
-		"article": "911. ARTICLE 111.",
-		"title": "Drunken or Reckless Driving",
+		"article": "911. ARTICLE 113.",
+		"title": "Drunken or Reckless Operation of a Vehicle, Aircraft, or Vessel ",
 		"slug":"drunkendriving",
 		"description": "Operating any vehicle while drunk, in a reckless or wanton manner, or while impaired by a substance.",
 		"image": "drunkendriving-1.jpg",
@@ -416,7 +416,7 @@ var articles=[
 		"scenarios":[
 			{
 				"id": 0,
-				"article": "911.ARTICLE 111",
+				"article": "911.ARTICLE 113",
 				"title": "Scenario 1",
 				"image": "drunkendriving-1.jpg",
 				"content":[
@@ -459,7 +459,7 @@ var articles=[
 			},
 			{
 				"id": 1,
-				"article": "911.ARTICLE 111",
+				"article": "911.ARTICLE 113",
 				"title": "Scenario 2",
 				"image": "drunkendriving-2.jpg",
 				"content":[
@@ -603,7 +603,7 @@ var articles=[
 	{
 		"id": 6,
 		"article": "920. ARTICLE 120.",
-		"title": "Rape and Sexual Assault",
+		"title": "Rape and Sexual Assault Generally",
 		"slug":"rape",
 		"description": "Committing an unwanted sexual act or sexual assault of any kind upon another person.",
 		"image": "rape-1.jpg",
