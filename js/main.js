@@ -785,18 +785,6 @@ function arrayScan(target, key){
 
 $(document).ready(function(){
 
-	//restore saved article data
-	if(Cookies.get('ucmjArticles')){
-		var localdata=JSON.parse(Cookies.get('ucmjArticles'));
-	
-		$.each(localdata,function(){
-			var articleIndex=this.articleIndex;
-			$.each(this.scenarios,function(){
-				articles[articleIndex].scenarios[this].complete=true;
-			});
-		});
-	}
-
 	$.each(articles, function(){
 		$('<div>').load('ucmj.html #'+this.slug).unwrap().appendTo('#primer .modal-body .primer-articles');
 		$('<li><a href="#'+this.slug+'">'+this.title+'</a></li>').appendTo('#primer .modal-body .primer-nav');
@@ -1059,7 +1047,7 @@ $(document).ready(function(){
 							});
 						}
 					});
-					Cookies.set('ucmjArticles',JSON.stringify(localdata));
+
 				}
 				else{
 					$('#responseModal').removeClass('modal-correct');
