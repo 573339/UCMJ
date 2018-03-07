@@ -96,6 +96,8 @@ hr {
 
 .tile {
   background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center center;
   min-height:200px;
   display:block;
   color:$white-color;
@@ -196,24 +198,138 @@ hr {
   background:url(../img/assault-article.jpg); 
 }
 
-.green {
+#articles-progress-filter [data-progress="all"] {
+  border-top:4px solid rgb(191, 191, 191);
+}
+
+
+.green, .progress-complete >a>div, #articles-progress-filter [data-progress="complete"] {
   border-top:4px solid $green-color;
 }
 
-.red{
+.red, .progress-new >a>div, #articles-progress-filter [data-progress="new"]{
   border-top:4px solid $red-color;
 }
 
 
-.yellow {
+.yellow, .progress-underway  >a>div, #articles-progress-filter [data-progress="underway"]{
   border-top:4px solid $yellow-color;
 }
 
 
+/*  read article modal */
+#primer{
+
+  .close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .modal-content{
+    border:0;
+  }
+  .modal-dialog{
+    width:900px;
+
+    .modal-body{
+      height: 590px;
+      padding: 0;
+      background: #eee;
+
+      &>*{
+        float:left;
+      }
+
+      .primer-nav{
+
+        
+        width: 300px;
+
+        li a{
+          display:block;
+          padding: 16px 20px;
+          border-bottom:1px solid #fff;
+        }
+
+
+      }
+
+      .primer-articles{
+        background:white;
+        width: 600px;
+        height: 590px;
+        overflow:auto;
+
+        & div[id]{
+          padding-top: 30px;
+          padding-bottom: 20px;
+        }
+
+      }
+    }
+  }
+
+  span{
+    margin-top: 30px;
+    color: $blue-color;
+  }
+
+  h3{
+    margin-top:0;
+    margin-bottom:10px;
+  }
+
+  h1{
+    margin:0;
+    line-height: 68px;
+  }
+  .indent{
+    &.indent-1{
+      margin-left: 30px;
+    }
+    &.indent-2{
+      margin-left: 60px;
+    }
+  }
+}
+
+
+/* SEARCH */
+
+.search-wrapper{
+  position: relative;
+
+  #search-box{
+    height: 44px;
+    padding-left:8px;
+  }
+  
+  .search-clear{
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    /* height: 30px; */
+    background: $blue-color;
+    border-radius: 0 2px 2px 0;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    font-size: 30px;
+  }
+
+}
+
 /*SCENARIO TILES*/
+
+
 
 .scenario-tile {
   background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center center;
   min-height:232px;
   display:block;
   color:$white-color;
@@ -250,10 +366,17 @@ background:url(../img/larceny-thumb4.jpg);
   padding:0;
 }
 
+img#scenario-screen-image {
+  width: 1024px;
+  height: 661px;
+}
+
 .bar {
+  position:fixed;
+  bottom:0;
   padding:0;
   background:$white-color;
-  max-height:65px;
+  height:65px;
 }
 
 .box {
@@ -273,6 +396,7 @@ background:url(../img/larceny-thumb4.jpg);
 
 .article {
 
+
   p {
   font-size: 12px;
   color:$black-color;
@@ -291,6 +415,15 @@ background:url(../img/larceny-thumb4.jpg);
 
 .progress-bar {
   float:none;
+  transition: .3s ease-out width;
+}
+
+#articles-library{
+  padding-top:144px;
+}
+
+#article, #scenario{
+  padding-top:40px;
 }
 
 
@@ -326,12 +459,79 @@ background:url(../img/larceny-thumb4.jpg);
   font-weight:lighter;
 }
 
-.larceny-banner {
-@extend .background;
-background-image: url("../img/larceny-banner.jpg");
-background-repeat:no-repeat;
-margin-bottom:20px;
-  
+#article-banner {
+  @extend .background;
+  background-repeat:no-repeat;
+  margin-bottom:20px;
+}
+
+#testModal,#responseModal{
+  text-align:center;
+
+  .modal-header .close{
+    position: absolute;
+    right: 10px;
+    top: -40px;
+  }
+
+  .modal-dialog{
+    margin-top:60px;
+    width: 350px;
+  }
+
+  .modal-content{
+    border-radius:6px;
+  }
+
+  .modal-subtitle{
+    display:inline-block;
+    text-align:center;
+    padding: 8px 12px;
+    border-radius:100%;
+    background-color: green;
+    color:white;
+    font-size: 12px;
+    border-radius: 30px;
+    text-transform:uppercase;
+
+    &.incorrect{
+      background-color:red;
+    }
+  }
+
+
+  .btn {
+
+    border-radius: 0;
+    padding: 16px;
+    white-space: normal;
+  }
+
+  .btn-primary{
+    color: white;
+    background-color: #007aff;
+  }
+
+  .btn-secondary{
+    color: #717171;
+    background-color: #dcdcdc;
+  }
+
+  .btn-test-tryagain{
+      display:block;
+    }
+    .btn-test-toarticle{
+      display:none;
+    }
+
+  &.modal-correct{
+    .btn-test-tryagain{
+      display:none;
+    }
+    .btn-test-toarticle{
+      display:block;
+    }
+  }
 }
 
 

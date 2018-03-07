@@ -1,11 +1,27 @@
 /* Navigation */
 
+nav{
+	position:fixed;
+	top:0;
+	width: 100%;
+	z-index:100;
+}
+
+.nav-header{
+	position:fixed;
+	top:40px;
+	width: 100%;
+	z-index:100;
+}
+
 .nav-pills {
-	border:1px solid $blue-color;
-	width:449px;
+	width:auto;
+	float:left;
+	position:absolute;
+
 
 	li {
-	border-right: 1px solid $blue-color;
+		border-right: 1px solid #d8d8d8;
 	}
 }
 
@@ -19,6 +35,7 @@
 .nav-pills > li > a {
 	border-radius:0px;
 	padding: 10px 28px;
+	background-color: #f1f1f1;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
 	border-radius:0px;
