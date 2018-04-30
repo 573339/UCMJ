@@ -51,7 +51,7 @@ var articles=[
 					"options":[
 						{
 							"text": "Close the locker",
-							"response":"Any interaction with property that is not your own could be misconstrued.  Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal property, or article of value of any kind is a punishable offense."
+							"response":"Any interaction with property that is not your own could be misconstrued and therefore a bad idea. While securing their gear is not itself a crime, it is a bad idea.  Wrongfully taking, obtaining, or withholding, by any means, from the possession of the owner or of any other person any money, personal property, or article of value of any kind is a punishable offense."
 						},
 						{
 							"text": "Report the issue to a superior",
@@ -140,7 +140,7 @@ var articles=[
 					},
 					{
 						"image": "AWOL-1-04f.jpg",
-						"text": "As you are leaving, a RDC directs you to report to Remedial Swim Instruction by 15:30."
+						"text": "As you are leaving, a RDC directs you to report to Remedial Swim Instruction."
 					}
 				],
 				"test":{
@@ -191,7 +191,7 @@ var articles=[
 					"description": "You are giving serious consideration to sneaking out of your compartment to meet up with a fellow recruit",
 					"options":[
 						{
-							"text": "Don’t risk it",
+							"text": "Don’t do it",
 							"correct": true,
 							"response":"Consider the consequences and go back to sleep.  Absenting yourself without authority from your unit, organization, or place of duty at which you are required to be at the time prescribed is a punishable offense."
 						},
@@ -247,7 +247,7 @@ var articles=[
 					"options":[
 						{
 							"text": "Make a quick call from the payphones",
-							"response":"Violating or failing to obey any lawful general order or regulation is a punishable offense."
+							"response":"Recruits have standing orders to only use pay phones when with an RDC. Violating or failing to obey any lawful general order or regulation is a punishable offense."
 						},
 						{
 							"text": "Go directly to Building 1405 as ordered",
@@ -257,49 +257,6 @@ var articles=[
 						{
 							"text": "Stop by the payphones and see if you have time for a call",
 							"response":"Violating or failing to obey any lawful general order or regulation is a punishable offense."
-						}
-					]
-				}
-			},
-			{
-				"id": 1,
-				"article": "892.ARTICLE 92",
-				"title": "Scenario 2",
-				"image": "failuretoobey-2.jpg",
-				"content":[
-					{
-						"image": "FailureToObey-2-01f.jpg",
-						"text": "You are assigned fire watch for your compartment, and should be up most of the night."
-					},
-					{
-						"image": "FailureToObey-2-02f.jpg",
-						"text": "After a few hours it becomes increasingly harder to stay alert."
-					},
-					{
-						"image": "FailureToObey-2-03f.jpg",
-						"text": "Everyone is sound asleep and nobody is checking on you."
-					},
-					{
-						"image": "FailureToObey-2-04f.jpg",
-						"text": "You figure you have done your part and consider slipping into your rack for the last couple of hours."
-					}
-				],
-				"test":{
-					"prompt": "What do you do?",
-					"description": "You figure you have done your part and consider slipping into your rack for the last couple of hours",
-					"options":[
-						{
-							"text": "Take the rest of the night off",
-							"response":"Being derelict in the performance of your duties is a punishable offense."
-						},
-						{
-							"text": "Sleep standing up",
-							"response":"Being derelict in the performance of your duties is a punishable offense."
-						},
-						{
-							"text": "Stay focused",
-							"correct": true,
-							"response":"How you perform your duties is a reflection on your character.  Being derelict in the performance of your duties is a punishable offense."
 						}
 					]
 				}
@@ -350,10 +307,10 @@ var articles=[
 						},
 						{
 							"text": "Sign and turn in the form",
-							"response":"Deceit with intent including signing a false record, return, regulation, order, or other official document, knowing it to be false is a punishable offense."
+							"response":"Intent to deceive including signing a false record, return, regulation, order, or other official document, knowing it to be false is a punishable offense."
 						},
 						{
-							"text": "Ask an authority figure for advice",
+							"text": "Ask another recruit to fill it in for you",
 							"response":"Deceit with intent including signing a false record, return, regulation, order, or other official document, knowing it to be false is a punishable offense."
 						}
 					]
@@ -387,7 +344,7 @@ var articles=[
 					"description": "Your RDC looks directly at you and asks if you know who is responsible",
 					"options":[
 						{
-							"text": "Take no action",
+							"text": "Tell him you do not know who is responsible.",
 							"response":"Making an intentionally deceitful false official statement knowing it to be false, is a punishable offense."
 						},
 						{
@@ -430,7 +387,7 @@ var articles=[
 					},
 					{
 						"image": "Drunken-1-03f.jpg",
-						"text": "Now feeling light headed, you have to make sure you get back on time."
+						"text": "3.	Now feeling light headed due to the ingredients of the cough medicine, you have to make sure you get back on time."
 					},
 					{
 						"image": "Drunken-1-04f.jpg",
@@ -634,7 +591,7 @@ var articles=[
 					"description": "His back is to you, and you are thinking of how to get back at him for his last prank",
 					"options":[
 						{
-							"text": "Do nothing, you're already running late",
+							"text": "Do nothing",
 							"correct": true,
 							"response":"Touching, or causing another person to touch, either directly or through the clothing is a punishable offense."
 						},
@@ -743,6 +700,61 @@ var articles=[
 							"text": "Talk to your RDC.",
 							"correct": true,
 							"response":"Everyone is stressed and accidents happen. Intentionally committing an assault with or without a dangerous weapon or other means or force likely to produce death or grievous bodily harm is a punishable offense. Your RDC might change your bunk assignment."
+						}
+					]
+				}
+			}
+		]
+	},
+	{
+		"id": 8,
+		"article": "895. ARTICLE 95.",
+		"title": "Offenses By Sentinel or Lookout",
+		"slug":"sentinel",
+		"description": "Misbehavior while performing the duties of a lookout or sentinel.",
+		"image": "failuretoobey-2.jpg",
+		"libraryImage": "failure-article.jpg",
+		"progress": "new",
+		"scenarios":[
+			{
+				"id": 0,
+				"article": "895.ARTICLE 95",
+				"title": "Scenario 1",
+				"image": "failuretoobey-2.jpg",
+				"content":[
+					{
+						"image": "FailureToObey-2-01f.jpg",
+						"text": "You are assigned fire watch for your compartment, and should be up most of the night."
+					},
+					{
+						"image": "FailureToObey-2-02f.jpg",
+						"text": "After a few hours it becomes increasingly harder to stay alert."
+					},
+					{
+						"image": "FailureToObey-2-03f.jpg",
+						"text": "Everyone is sound asleep and nobody is checking on you."
+					},
+					{
+						"image": "FailureToObey-2-04f.jpg",
+						"text": "You figure you have done your part and consider slipping into your rack for the last couple of hours."
+					}
+				],
+				"test":{
+					"prompt": "What do you do?",
+					"description": "You figure you have done your part and consider slipping into your rack for the last couple of hours",
+					"options":[
+						{
+							"text": "Take the rest of the night off",
+							"response":"Being derelict in the performance of your duties is a punishable offense."
+						},
+						{
+							"text": "Sleep standing up",
+							"response":"Being derelict in the performance of your duties is a punishable offense."
+						},
+						{
+							"text": "Stay focused",
+							"correct": true,
+							"response":"How you perform your duties is a reflection on your character.  Being derelict in the performance of your duties is a punishable offense."
 						}
 					]
 				}
